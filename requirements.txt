@@ -1,0 +1,43 @@
+# Parcours Python Data Analysis — bibliothèques du parcours
+# Installation : pip install -r requirements.txt (dans ton venv)
+
+# Fondamentaux data
+numpy
+pandas
+
+# Visualisation
+matplotlib
+seaborn
+plotly
+kaleido          # export d'images statiques Plotly (fig.write_image)
+
+# Web
+requests
+beautifulsoup4
+
+# Fichiers
+openpyxl         # lecture/écriture Excel (.xlsx)
+pyarrow          # lecture/écriture Parquet
+
+# Notebooks
+jupyterlab
+
+# SQL et alternatives
+sqlalchemy
+duckdb
+polars
+
+# Dashboard
+dash
+streamlit
+
+# Sujets avancés (module 14)
+scipy
+scikit-learn
+geopandas
+
+# Optionnel (module 09 avancé, 13 big data)
+# scrapy
+# dask[dataframe]
+# apache-airflow
+# pyspark
