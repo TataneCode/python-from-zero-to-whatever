@@ -12,6 +12,7 @@ __pycache__/
 data/
 rapports/
 *.parquet
+*.epub
 
 # Secrets et clés (ne JAMAIS committer)
 .env

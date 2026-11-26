@@ -1,0 +1,60 @@
+name: EPUB du parcours complet
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: epub-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generer-epub:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Convertir parcours-complet.md en EPUB avec Pandoc
+        run: |
+          docker run --rm \
+            --user "$(id -u):$(id -g)" \
+            --volume "$PWD":/data \
+            --workdir /data \
+            pandoc/core:3.6 \
+            parcours-complet.md \
+            --output parcours-complet.epub \
+            --toc \
+            --toc-depth=2 \
+            --split-level=1 \
+            --metadata title="Parcours complet — Python de zéro à l'analyse de données" \
+            --metadata author="TataneCode" \
+            --metadata lang="fr"
+
+      - name: Vérifier que l'EPUB est valide
+        run: |
+          ls -lh parcours-complet.epub
+          test "$(unzip -p parcours-complet.epub mimetype)" = "application/epub+zip"
+
+      - name: Publier l'EPUB comme artifact du run
+        uses: actions/upload-artifact@v4
+        with:
+          name: parcours-complet-epub
+          path: parcours-complet.epub
+          retention-days: 90
+
+      - name: Publier l'EPUB dans la release latest-epub
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if gh release view latest-epub >/dev/null 2>&1; then
+            gh release edit latest-epub --notes "Dernière mise à jour : commit ${{ github.sha }} (EPUB régénéré depuis parcours-complet.md)."
+          else
+            gh release create latest-epub --title "Parcours complet Python — EPUB" --notes "EPUB généré automatiquement avec Pandoc depuis parcours-complet.md à chaque merge sur main."
+          fi
+          gh release upload latest-epub parcours-complet.epub --clobber
