@@ -20,6 +20,53 @@ jobs:
       - name: Récupérer le dépôt
         uses: actions/checkout@v4
 
+      - name: Vérifier l'intégrité du Markdown (ancres et liens internes)
+        run: |
+          python3 - <<'PY'
+          import re, sys
+          lines = open("parcours-complet.md", encoding="utf-8").read().split("\n")
+          fence = re.compile(r"^\s*(```|~~~)")
+          atx = re.compile(r"^(#{1,6})\s+(.*)$")
+          attr = re.compile(r"\{#([^}]+)\}\s*#*\s*$")
+          link = re.compile(r"\[[^\]]*\]\(([^)\s]+)\)")
+          ids = set()
+          errors = []
+          in_fence = False
+          for i, l in enumerate(lines, 1):
+              if fence.match(l):
+                  in_fence = not in_fence
+                  continue
+              if in_fence:
+                  continue
+              m = atx.match(l)
+              if m:
+                  a = attr.search(m.group(2))
+                  if not a:
+                      errors.append(f"titre sans ancre {{#...}} ligne {i}: {l[:60]}")
+                  elif a.group(1) in ids:
+                      errors.append(f"ancre dupliquée ligne {i}: {a.group(1)}")
+                  else:
+                      ids.add(a.group(1))
+          in_fence = False
+          for i, l in enumerate(lines, 1):
+              if fence.match(l):
+                  in_fence = not in_fence
+                  continue
+              if in_fence:
+                  continue
+              for u in link.findall(l):
+                  if u.startswith(("http://", "https://", "mailto:")):
+                      continue
+                  if not u.startswith("#"):
+                      errors.append(f"lien interne non ancré, ligne {i}: {u}")
+                  elif u[1:].partition("#")[0] not in ids:
+                      errors.append(f"ancre inconnue, ligne {i}: {u}")
+          for e in errors:
+              print(e)
+          print(f"{len(ids)} ancres de titres, {len(errors)} erreur(s)")
+          sys.exit(1 if errors else 0)
+          PY
+
       - name: Convertir parcours-complet.md en EPUB avec Pandoc
         run: |
           docker run --rm \
@@ -30,8 +77,8 @@ jobs:
             parcours-complet.md \
             --output parcours-complet.epub \
             --toc \
-            --toc-depth=2 \
-            --split-level=1 \
+            --toc-depth=3 \
+            --epub-chapter-level=1 \
             --metadata title="Parcours complet — Python de zéro à l'analyse de données" \
             --metadata author="TataneCode" \
             --metadata lang="fr"
@@ -40,6 +87,47 @@ jobs:
         run: |
           ls -lh parcours-complet.epub
           test "$(unzip -p parcours-complet.epub mimetype)" = "application/epub+zip"
+          python3 - <<'PY'
+          import posixpath, re, sys, zipfile
+          import xml.etree.ElementTree as ET
+          z = zipfile.ZipFile("parcours-complet.epub")
+          names = set(z.namelist())
+          ids = {}
+          xml_errors = []
+          for n in sorted(names):
+              if n.endswith((".xhtml", ".opf", ".ncx")):
+                  try:
+                      root = ET.fromstring(z.read(n))
+                  except ET.ParseError as e:
+                      xml_errors.append(f"XML invalide: {n}: {e}")
+                      continue
+                  for el in root.iter():
+                      i = el.get("id")
+                      if i:
+                          ids.setdefault(n, set()).add(i)
+          errors = 0
+          checked = 0
+          for n in sorted(names):
+              if not n.endswith((".xhtml", ".opf", ".ncx")):
+                  continue
+              for ref in re.findall(rb'(?:href|src)="([^"]+)"', z.read(n)):
+                  ref = ref.decode("utf-8")
+                  if ref.startswith(("http://", "https://", "mailto:", "data:")):
+                      continue
+                  checked += 1
+                  path, _, frag = ref.partition("#")
+                  target = posixpath.normpath(posixpath.join(posixpath.dirname(n), path)) if path else n
+                  if target not in names:
+                      print(f"LIEN CASSÉ: {n} -> {ref}")
+                      errors += 1
+                  elif frag and frag not in ids.get(target, set()):
+                      print(f"ANCRE ABSENTE: {n} -> {ref}")
+                      errors += 1
+          for e in xml_errors:
+              print(e)
+          print(f"{checked} références internes vérifiées, {errors + len(xml_errors)} erreur(s)")
+          sys.exit(1 if errors or xml_errors else 0)
+          PY
 
       - name: Publier l'EPUB comme artifact du run
         uses: actions/upload-artifact@v4

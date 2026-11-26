@@ -1,4 +1,4 @@
-# Parcours complet — Python de zéro à l'analyse de données
+# Parcours complet — Python de zéro à l'analyse de données {#parcours-complet-python-de-zero-a-l-analyse-de-donnees}
 > Concaténation de toutes les leçons du parcours, dans l'ordre de la roadmap (du setup jusqu'aux projets). Généré pour la lecture sur liseuse.
 
 
@@ -6,47 +6,47 @@
 
 <!-- source : README.md -->
 
-# Python — de zéro à l'analyse de données
+# Python — de zéro à l'analyse de données {#python-de-zero-a-l-analyse-de-donnees}
 
 Parcours d'apprentissage guidé, construit à partir de la roadmap [roadmap.sh — Python for Data Analysis](https://roadmap.sh/python-data-analysis), pour apprendre Python appliqué à l'analyse de données, de l'installation de l'environnement jusqu'aux dashboards et aux pipelines.
 
-## 🖥️ Démarrage : préparer ta machine
+## 🖥️ Démarrage : préparer ta machine {#demarrage-preparer-ta-machine}
 
-1. [Setup Linux](00-setup/linux.md) ou [Setup Windows](00-setup/windows.md) : Python 3, pip, venv.
-2. [Configuration de VSCodium](00-setup/vscodium.md) (IDE cible du parcours).
+1. [Setup Linux](#setup-sous-linux-python-vscodium) ou [Setup Windows](#setup-sous-windows-python-vscodium) : Python 3, pip, venv.
+2. [Configuration de VSCodium](#vscodium-configuration-pour-la-data-analysis) (IDE cible du parcours).
 3. Installer les bibliothèques : `pip install -r requirements.txt` dans ton venv.
 
-## 📚 Les leçons (dans l'ordre de la roadmap)
+## 📚 Les leçons (dans l'ordre de la roadmap) {#les-lecons-dans-l-ordre-de-la-roadmap}
 
 | Module | Contenu |
 |---|---|
-| [01 — Fondamentaux](01-fondamentaux/README.md) | types, opérateurs, structures de données, conditions, boucles, fonctions, compréhensions, chaînes |
-| [02 — Gestion des packages](02-gestion-packages/README.md) | pip, venv, uv, conda |
-| [03 — Lecture de fichiers](03-lecture-fichiers/README.md) | `pathlib`, CSV, JSON, Excel, Parquet |
-| [04 — NumPy](04-numpy/README.md) | `ndarray`, opérations vectorisées, indexing/slicing, algèbre linéaire, random |
-| [05 — Pandas](05-pandas/README.md) | Series/DataFrame, lecture, filtrage, groupby, merge/join, reshaping |
-| [06 — Nettoyage de données](06-nettoyage/README.md) | valeurs manquantes, outliers (IQR, z-score), types/dates, texte, catégories |
-| [07 — EDA](07-eda/README.md) | statistiques descriptives, distributions, relations entre variables |
-| [08 — Visualisation](08-visualisation/README.md) | Matplotlib, Seaborn, Plotly |
-| [09 — Web](09-web/README.md) | API avec `requests`, scraping avec BeautifulSoup, Scrapy (aperçu) |
-| [10 — SQL](10-sql/README.md) | fondamentaux SQL, sqlite3/SQLAlchemy, DuckDB |
-| [11 — Polars](11-polars/README.md) | DataFrame rapide en Rust, expressions, lazy |
-| [12 — Dashboards](12-dashboards/README.md) | Streamlit, Dash, Power BI/Tableau (aperçu) |
-| [13 — Big data & pipelines](13-big-data-pipelines/README.md) | Dask, PySpark, Airflow (aperçus) |
-| [14 — Sujets avancés](14-sujets-avances/README.md) | POO, SciPy/scikit-learn, géospatial (GeoPandas) |
+| [01 — Fondamentaux](#01-fondamentaux-de-python) | types, opérateurs, structures de données, conditions, boucles, fonctions, compréhensions, chaînes |
+| [02 — Gestion des packages](#02-gestion-des-packages-et-des-environnements) | pip, venv, uv, conda |
+| [03 — Lecture de fichiers](#03-lecture-et-ecriture-de-fichiers-formats-de-donnees) | `pathlib`, CSV, JSON, Excel, Parquet |
+| [04 — NumPy](#04-numpy-le-calcul-numerique-vectorise) | `ndarray`, opérations vectorisées, indexing/slicing, algèbre linéaire, random |
+| [05 — Pandas](#05-pandas-la-manipulation-de-donnees-tabulaires) | Series/DataFrame, lecture, filtrage, groupby, merge/join, reshaping |
+| [06 — Nettoyage de données](#06-nettoyage-de-donnees-data-cleaning) | valeurs manquantes, outliers (IQR, z-score), types/dates, texte, catégories |
+| [07 — EDA](#07-analyse-exploratoire-des-donnees-eda) | statistiques descriptives, distributions, relations entre variables |
+| [08 — Visualisation](#08-visualisation-de-donnees) | Matplotlib, Seaborn, Plotly |
+| [09 — Web](#09-recuperer-des-donnees-sur-le-web-api-et-scraping) | API avec `requests`, scraping avec BeautifulSoup, Scrapy (aperçu) |
+| [10 — SQL](#10-sql-avec-python) | fondamentaux SQL, sqlite3/SQLAlchemy, DuckDB |
+| [11 — Polars](#11-polars-l-alternative-rapide-a-pandas) | DataFrame rapide en Rust, expressions, lazy |
+| [12 — Dashboards](#12-dashboards-et-outils-bi) | Streamlit, Dash, Power BI/Tableau (aperçu) |
+| [13 — Big data & pipelines](#13-big-data-et-pipelines-de-donnees-apercu) | Dask, PySpark, Airflow (aperçus) |
+| [14 — Sujets avancés](#14-sujets-avances-apercus) | POO, SciPy/scikit-learn, géospatial (GeoPandas) |
 
-## 🛠️ Projets solo (à faire sans IA)
+## 🛠️ Projets solo (à faire sans IA) {#projets-solo-a-faire-sans-ia}
 
-10 mini-projets progressifs, énoncés uniquement dans [`projets/`](projets/README.md) : dépenses personnelles, notes de classe, météo via API, scraping de livres, EDA du Titanic, benchmark pandas vs Polars, mini-ETL SQL, dashboard Streamlit, nettoyage d'un dataset sale, rapport automatisé.
+10 mini-projets progressifs, énoncés uniquement dans [`projets/`](#projets-solo-a-realiser-sans-ia) : dépenses personnelles, notes de classe, météo via API, scraping de livres, EDA du Titanic, benchmark pandas vs Polars, mini-ETL SQL, dashboard Streamlit, nettoyage d'un dataset sale, rapport automatisé.
 
-## 📖 Ressources officielles
+## 📖 Ressources officielles {#ressources-officielles}
 
 - [Documentation Python 3 (FR)](https://docs.python.org/fr/3/)
 - [NumPy](https://numpy.org/doc/stable/) · [Pandas](https://pandas.pydata.org/docs/) · [Matplotlib](https://matplotlib.org/stable/) · [Seaborn](https://seaborn.pydata.org/) · [Plotly](https://plotly.com/python/)
 - [Requests](https://requests.readthedocs.io/) · [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) · [SQLite](https://www.sqlitetutorial.net/) · [DuckDB](https://duckdb.org/docs/) · [Polars](https://docs.pola.rs/) · [Streamlit](https://docs.streamlit.io/)
 - Roadmaps voisines : [Data Analyst](https://roadmap.sh/data-analyst), [SQL](https://roadmap.sh/sql), [Machine Learning](https://roadmap.sh/machine-learning), [AI & Data Scientist](https://roadmap.sh/ai-data-scientist)
 
-## 📁 Organisation
+## 📁 Organisation {#organisation}
 
 Chaque module contient un `README.md` (index) et des leçons numérotées. Chaque leçon comporte : objectifs, théorie avec exemples, exercices à faire seul, liens vers la doc officielle. Aucun corrigé n'est fourni : c'est volontaire.
 
@@ -55,16 +55,16 @@ Chaque module contient un `README.md` (index) et des leçons numérotées. Chaqu
 
 <!-- source : 00-setup/README.md -->
 
-# 00 — Mise en place de l'environnement
+# 00 — Mise en place de l'environnement {#00-mise-en-place-de-l-environnement}
 
 Avant toute leçon, prépare ta machine. L'ordre recommandé :
 
-1. [Installation sous Linux](linux.md) ou [sous Windows](windows.md) : Python 3 + pip + venv.
-2. [Configuration de VSCodium](vscodium.md) : l'IDE cible pour tout le parcours.
+1. [Installation sous Linux](#setup-sous-linux-python-vscodium) ou [sous Windows](#setup-sous-windows-python-vscodium) : Python 3 + pip + venv.
+2. [Configuration de VSCodium](#vscodium-configuration-pour-la-data-analysis) : l'IDE cible pour tout le parcours.
 3. Crée un dossier de projet dédié, par exemple `~/projets/python-data-analysis/`, et un environnement virtuel à l'intérieur (voir les guides OS).
 4. Installe les bibliothèques du parcours : `pip install -r requirements.txt` (fichier à la racine du dépôt).
 
-## Vérification rapide
+## Vérification rapide {#verification-rapide}
 
 Dans un terminal, avec l'environnement virtuel activé :
 
@@ -74,23 +74,23 @@ pip --version
 python -c "import numpy, pandas; print(numpy.__version__, pandas.__version__)"
 ```
 
-## Alternatives si tu ne veux rien installer
+## Alternatives si tu ne veux rien installer {#alternatives-si-tu-ne-veux-rien-installer}
 
 - **JupyterLab** en local : `pip install jupyterlab` puis `jupyter lab` (interface notebook dans le navigateur).
 - **Google Colab** : notebooks en ligne gratuits avec GPU, rien à installer (compte Google requis).
 
-Passe ensuite au [module 01 — les fondamentaux de Python](../01-fondamentaux/README.md).
+Passe ensuite au [module 01 — les fondamentaux de Python](#01-fondamentaux-de-python).
 
 
 ---
 
 <!-- source : 00-setup/linux.md -->
 
-# Setup sous Linux (Python + VSCodium)
+# Setup sous Linux (Python + VSCodium) {#setup-sous-linux-python-vscodium}
 
 Ce guide couvre les distributions basées sur Debian/Ubuntu ; des variantes pour Fedora et Arch sont indiquées entre parenthèses.
 
-## 1. Installer Python 3, pip et venv
+## 1. Installer Python 3, pip et venv {#1-installer-python-3-pip-et-venv}
 
 ```bash
 sudo apt update
@@ -109,7 +109,7 @@ pip3 --version
 
 > Astuce : sur certaines distributions, `python` n'existe pas, utilise toujours `python3`.
 
-## 2. Installer VSCodium
+## 2. Installer VSCodium {#2-installer-vscodium}
 
 **Option A — Flatpak (simple, fonctionne partout) :**
 
@@ -132,7 +132,7 @@ Lance ensuite `codium` depuis le menu ou le terminal.
 
 **Option C — Arch :** `yay -S vscodium` (ou `vscodium-bin` depuis l'AUR).
 
-## 3. Créer le projet et son environnement virtuel
+## 3. Créer le projet et son environnement virtuel {#3-creer-le-projet-et-son-environnement-virtuel}
 
 ```bash
 mkdir -p ~/projets/python-data-analysis
@@ -146,7 +146,7 @@ pip install -r /chemin/vers/le/depot/requirements.txt
 L'activation est visible dans le terminal : le prompt est préfixé par `(.venv)`.
 Pour quitter l'environnement : `deactivate`.
 
-## 4. Ouvrir le projet dans VSCodium
+## 4. Ouvrir le projet dans VSCodium {#4-ouvrir-le-projet-dans-vscodium}
 
 ```bash
 codium ~/projets/python-data-analysis
@@ -155,10 +155,10 @@ codium ~/projets/python-data-analysis
 Puis :
 
 1. `Ctrl+Maj+P` → tape `Python: Select Interpreter` → choisis `./.venv/bin/python`.
-2. Installe les extensions (voir [vscodium.md](vscodium.md)) : **Python**, **Pylance**, **Jupyter**.
+2. Installe les extensions (voir [vscodium.md](#vscodium-configuration-pour-la-data-analysis)) : **Python**, **Pylance**, **Jupyter**.
 3. Ouvre un fichier `.py` et lance-le avec `F5` ou via le bouton ▶, ou dans le terminal intégré : `python mon_script.py`.
 
-## 5. (Optionnel) JupyterLab
+## 5. (Optionnel) JupyterLab {#5-optionnel-jupyterlab}
 
 ```bash
 pip install jupyterlab
@@ -167,7 +167,7 @@ jupyter lab
 
 Un onglet navigateur s'ouvre sur `http://localhost:8888`.
 
-## Récapitulatif des commandes utiles
+## Récapitulatif des commandes utiles {#recapitulatif-des-commandes-utiles}
 
 | Action | Commande |
 |---|---|
@@ -184,11 +184,11 @@ Un onglet navigateur s'ouvre sur `http://localhost:8888`.
 
 <!-- source : 00-setup/vscodium.md -->
 
-# VSCodium : configuration pour la data analysis
+# VSCodium : configuration pour la data analysis {#vscodium-configuration-pour-la-data-analysis}
 
 VSCodium est la version 100 % open source de VS Code, sans télémétrie Microsoft. C'est l'IDE cible de ce parcours.
 
-## 1. Extensions à installer
+## 1. Extensions à installer {#1-extensions-a-installer}
 
 Ouvre le panneau Extensions (`Ctrl+Maj+X`) et installe :
 
@@ -202,7 +202,7 @@ Ouvre le panneau Extensions (`Ctrl+Maj+X`) et installe :
 
 Extensions utiles ensuite : **Error Lens** (erreurs visibles en ligne), **autoDocstring** (génère les docstrings), **Rainbow CSV** (aperçu des CSV).
 
-## 2. Sélectionner l'interpréteur Python du projet
+## 2. Sélectionner l'interpréteur Python du projet {#2-selectionner-l-interpreteur-python-du-projet}
 
 1. Ouvre le dossier de ton projet : `Fichier > Ouvrir le dossier...`
 2. `Ctrl+Maj+P` → `Python: Select Interpreter`
@@ -210,18 +210,18 @@ Extensions utiles ensuite : **Error Lens** (erreurs visibles en ligne), **autoDo
 
 Vérification : la barre d'état en bas à gauche affiche `Python 3.x.x ('.venv')`.
 
-## 3. Exécuter un script
+## 3. Exécuter un script {#3-executer-un-script}
 
 - Bouton ▶ en haut à droite du fichier, ou `F5` (débogage), ou clic droit → **Run Python File in Terminal**.
 - Le terminal intégré s'ouvre en bas ; assure-toi que le venv est actif (`(.venv)` dans le prompt). Sinon active-le manuellement (voir les guides Linux/Windows).
 
-## 4. Travailler avec les notebooks (Jupyter)
+## 4. Travailler avec les notebooks (Jupyter) {#4-travailler-avec-les-notebooks-jupyter}
 
 1. Crée un fichier `notebook.ipynb` (ou `Nouveau fichier...` → sélectionne le type Notebook).
 2. En haut à droite, clique sur **Select Kernel** → choisis l'interpréteur du venv.
 3. Exécute les cellules avec `Maj+Entrée`.
 
-## 5. Quelques raccourcis utiles
+## 5. Quelques raccourcis utiles {#5-quelques-raccourcis-utiles}
 
 | Raccourci | Action |
 |---|---|
@@ -233,7 +233,7 @@ Vérification : la barre d'état en bas à gauche affiche `Python 3.x.x ('.venv'
 | `Maj+Entrée` | exécuter la cellule (notebook) |
 | `Ctrl+Shift+P` puis `Format Document` | formater le code |
 
-## 6. Réglages recommandés (settings.json)
+## 6. Réglages recommandés (settings.json) {#6-reglages-recommandes-settings-json}
 
 `Ctrl+Maj+P` → `Preferences: Open User Settings (JSON)` et ajoute :
 
@@ -248,16 +248,16 @@ Vérification : la barre d'état en bas à gauche affiche `Python 3.x.x ('.venv'
 
 > Sur Windows, remplace `python.defaultInterpreterPath` par `.\.venv\Scripts\python.exe` (chemin relatif au dossier ouvert).
 
-Tu es prêt·e : passe au [module 01 — fondamentaux de Python](../01-fondamentaux/README.md).
+Tu es prêt·e : passe au [module 01 — fondamentaux de Python](#01-fondamentaux-de-python).
 
 
 ---
 
 <!-- source : 00-setup/windows.md -->
 
-# Setup sous Windows (Python + VSCodium)
+# Setup sous Windows (Python + VSCodium) {#setup-sous-windows-python-vscodium}
 
-## 1. Installer Python 3
+## 1. Installer Python 3 {#1-installer-python-3}
 
 **Option A — winget (recommandé, Windows 10/11) :**
 
@@ -276,7 +276,7 @@ pip --version
 
 > Si `python` n'est pas reconnu, relance l'installeur et coche « Add Python to PATH », ou ajoute manuellement le dossier d'installation (ex. `C:\Users\<toi>\AppData\Local\Programs\Python\Python312`) à la variable d'environnement `Path`.
 
-## 2. Installer VSCodium
+## 2. Installer VSCodium {#2-installer-vscodium-1}
 
 **Option A — winget :**
 
@@ -286,7 +286,7 @@ winget install VSCodium.VSCodium
 
 **Option B — installateur :** télécharge le fichier `.exe` ou `.msi` sur [vscodium.com](https://vscodium.com/#install) et lance-le.
 
-## 3. Créer le projet et son environnement virtuel
+## 3. Créer le projet et son environnement virtuel {#3-creer-le-projet-et-son-environnement-virtuel-1}
 
 ```powershell
 mkdir $HOME\projets\python-data-analysis
@@ -313,7 +313,7 @@ pip install -r C:\chemin\vers\le\depot\requirements.txt
 L'activation est visible : le prompt est préfixé par `(.venv)`.
 Pour quitter l'environnement : `deactivate`.
 
-## 4. Ouvrir le projet dans VSCodium
+## 4. Ouvrir le projet dans VSCodium {#4-ouvrir-le-projet-dans-vscodium-1}
 
 Dans le terminal :
 
@@ -324,10 +324,10 @@ codium $HOME\projets\python-data-analysis
 Puis :
 
 1. `Ctrl+Maj+P` → tape `Python: Select Interpreter` → choisis `.\.venv\Scripts\python.exe`.
-2. Installe les extensions (voir [vscodium.md](vscodium.md)) : **Python**, **Pylance**, **Jupyter**.
+2. Installe les extensions (voir [vscodium.md](#vscodium-configuration-pour-la-data-analysis)) : **Python**, **Pylance**, **Jupyter**.
 3. Ouvre un fichier `.py` et lance-le avec `F5` ou via le bouton ▶, ou dans le terminal intégré : `python mon_script.py`.
 
-## 5. (Optionnel) JupyterLab
+## 5. (Optionnel) JupyterLab {#5-optionnel-jupyterlab-1}
 
 ```powershell
 pip install jupyterlab
@@ -336,7 +336,7 @@ jupyter lab
 
 Un onglet navigateur s'ouvre sur `http://localhost:8888`.
 
-## Récapitulatif des commandes utiles
+## Récapitulatif des commandes utiles {#recapitulatif-des-commandes-utiles-1}
 
 | Action | PowerShell | cmd |
 |---|---|---|
@@ -353,19 +353,19 @@ Un onglet navigateur s'ouvre sur `http://localhost:8888`.
 
 <!-- source : 01-fondamentaux/README.md -->
 
-# 01 — Fondamentaux de Python
+# 01 — Fondamentaux de Python {#01-fondamentaux-de-python}
 
 Avant d'analyser des données, il faut maîtriser les bases du langage. Ce module couvre la partie « Python » de la roadmap.
 
-## Leçons
+## Leçons {#lecons}
 
-1. [Types de données et opérateurs](01-types-operateurs.md) — entiers, flottants, booléens, chaînes, conversion de types, opérateurs arithmétiques/comparaison/logiques.
-2. [Structures de données](02-structures-donnees.md) — listes, tuples, sets, dictionnaires.
-3. [Contrôle de flux](03-controle-flux.md) — conditions `if/elif/else`, boucles `for`/`while`, `break`/`continue`.
-4. [Fonctions](04-fonctions.md) — définition, `*args`/`**kwargs`, fonctions lambda, fonctions intégrées utiles, fonctions vs méthodes.
-5. [Compréhensions et manipulation de chaînes](05-comprehensions-chaines.md) — list comprehensions, `print`, opérations courantes sur les strings.
+1. [Types de données et opérateurs](#lecon-1-types-de-donnees-et-operateurs) — entiers, flottants, booléens, chaînes, conversion de types, opérateurs arithmétiques/comparaison/logiques.
+2. [Structures de données](#lecon-2-structures-de-donnees) — listes, tuples, sets, dictionnaires.
+3. [Contrôle de flux](#lecon-3-controle-de-flux-conditions-et-boucles) — conditions `if/elif/else`, boucles `for`/`while`, `break`/`continue`.
+4. [Fonctions](#lecon-4-fonctions) — définition, `*args`/`**kwargs`, fonctions lambda, fonctions intégrées utiles, fonctions vs méthodes.
+5. [Compréhensions et manipulation de chaînes](#lecon-5-comprehensions-de-listes-et-manipulation-de-chaines) — list comprehensions, `print`, opérations courantes sur les strings.
 
-## À la fin du module tu sauras
+## À la fin du module tu sauras {#a-la-fin-du-module-tu-sauras}
 
 - Écrire un script Python qui lit des données saisies par l'utilisateur et applique des règles métier simples.
 - Manipuler des listes et dictionnaires sans chercher la syntaxe à chaque fois.
@@ -373,22 +373,22 @@ Avant d'analyser des données, il faut maîtriser les bases du langage. Ce modul
 
 Ressource officielle : [documentation Python 3 (tutoriel)](https://docs.python.org/fr/3/tutorial/).
 
-Module suivant : [02 — Gestion des packages](../02-gestion-packages/README.md).
+Module suivant : [02 — Gestion des packages](#02-gestion-des-packages-et-des-environnements).
 
 
 ---
 
 <!-- source : 01-fondamentaux/01-types-operateurs.md -->
 
-# Leçon 1 — Types de données et opérateurs
+# Leçon 1 — Types de données et opérateurs {#lecon-1-types-de-donnees-et-operateurs}
 
-## Objectifs
+## Objectifs {#objectifs}
 
 - Connaître les 4 types de base : `int`, `float`, `bool`, `str`.
 - Savoir convertir un type en un autre (`int()`, `float()`, `str()`, `bool()`).
 - Utiliser les opérateurs arithmétiques, de comparaison et logiques.
 
-## Les types de base
+## Les types de base {#les-types-de-base}
 
 ```python
 age = 25                 # int (entier)
@@ -399,7 +399,7 @@ nom = "Alice"            # str (chaîne de caractères)
 print(type(age))         # <class 'int'>
 ```
 
-## Conversion de types (type casting)
+## Conversion de types (type casting) {#conversion-de-types-type-casting}
 
 ```python
 entier = int("42")       # "42" -> 42
@@ -410,7 +410,7 @@ vrai = bool(1)           # 1 -> True  (0 -> False)
 
 Attention : `int("3.14")` provoque une erreur ; passe par `float` d'abord : `int(float("3.14"))` → `3`.
 
-## Opérateurs arithmétiques
+## Opérateurs arithmétiques {#operateurs-arithmetiques}
 
 | Opérateur | Signification | Exemple |
 |---|---|---|
@@ -420,7 +420,7 @@ Attention : `int("3.14")` provoque une erreur ; passe par `float` d'abord : `int
 | `%` | reste (modulo) | `7 % 2` → `1` |
 | `**` | puissance | `2 ** 10` → `1024` |
 
-## Opérateurs de comparaison
+## Opérateurs de comparaison {#operateurs-de-comparaison}
 
 `==` `!=` `<` `<=` `>` `>=` → renvoient un `bool`.
 
@@ -429,7 +429,7 @@ Attention : `int("3.14")` provoque une erreur ; passe par `float` d'abord : `int
 "a" == "A"  # False (sensible à la casse)
 ```
 
-## Opérateurs logiques
+## Opérateurs logiques {#operateurs-logiques}
 
 - `and` : les deux conditions doivent être vraies.
 - `or` : au moins une doit être vraie.
@@ -442,7 +442,7 @@ note = 15
 recu = note >= 10 or note == 9.5    # True
 ```
 
-## Afficher des variables
+## Afficher des variables {#afficher-des-variables}
 
 ```python
 nom = "Alice"
@@ -452,14 +452,14 @@ print(f"Bonjour {nom}, tu as {age} ans")   # f-string (recommandé)
 print("L'année prochaine tu auras", age + 1, "ans")
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul}
 
 1. Demande à l'utilisateur son année de naissance (`input()`), calcule et affiche son âge approximatif.
 2. Demande un prix HT et un taux de TVA (ex. 20), affiche le prix TTC.
 3. Écris une fonction `est_pair(n)` qui renvoie `True` si `n` est pair (utilise `%`).
 4. Demande trois notes, affiche la moyenne avec 2 décimales (`print(f"{moyenne:.2f}")`).
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin}
 
 - [Tutoriel officiel — nombres](https://docs.python.org/fr/3/tutorial/introduction.html#numbers)
 - `input()` renvoie toujours une `str` : pense à convertir.
@@ -469,15 +469,15 @@ print("L'année prochaine tu auras", age + 1, "ans")
 
 <!-- source : 01-fondamentaux/02-structures-donnees.md -->
 
-# Leçon 2 — Structures de données
+# Leçon 2 — Structures de données {#lecon-2-structures-de-donnees}
 
-## Objectifs
+## Objectifs {#objectifs-1}
 
 - Créer et manipuler **listes**, **tuples**, **sets** et **dictionnaires**.
 - Choisir la bonne structure selon le besoin.
 - Indexer et parcourir chaque structure.
 
-## Listes — `list` (ordonnée, modifiable, avec doublons)
+## Listes — `list` (ordonnée, modifiable, avec doublons) {#listes-list-ordonnee-modifiable-avec-doublons}
 
 ```python
 notes = [12, 15, 9, 18]
@@ -491,7 +491,7 @@ print(notes[1:3])       # sous-liste de l'index 1 à 2 inclus
 print(len(notes))       # taille
 ```
 
-## Tuples — `tuple` (ordonné, **non modifiable**)
+## Tuples — `tuple` (ordonné, **non modifiable**) {#tuples-tuple-ordonne-non-modifiable}
 
 ```python
 point = (3, 4)
@@ -501,7 +501,7 @@ x, y = point            # unpacking
 
 Utilise un tuple pour des données qui ne doivent pas changer (coordonnées, date, identifiant composé).
 
-## Sets — `set` (non ordonné, **sans doublons**)
+## Sets — `set` (non ordonné, **sans doublons**) {#sets-set-non-ordonne-sans-doublons}
 
 ```python
 villes = {"Paris", "Lyon", "Paris"}
@@ -512,7 +512,7 @@ print("Lyon" in villes) # True  (test d'appartenance très rapide)
 
 Opérations utiles : `a | b` (union), `a & b` (intersection), `a - b` (différence).
 
-## Dictionnaires — `dict` (clé → valeur)
+## Dictionnaires — `dict` (clé → valeur) {#dictionnaires-dict-cle-valeur}
 
 ```python
 personne = {"nom": "Alice", "age": 25, "ville": "Paris"}
@@ -531,7 +531,7 @@ for cle, valeur in personne.items():
     print(f"{cle} = {valeur}")
 ```
 
-## Quelle structure choisir ?
+## Quelle structure choisir ? {#quelle-structure-choisir}
 
 | Besoin | Structure |
 |---|---|
@@ -540,14 +540,14 @@ for cle, valeur in personne.items():
 | Savoir si un élément est présent / supprimer les doublons | `set` |
 | Associer une valeur à une clé (fiche, enregistrement) | `dict` |
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-1}
 
 1. Crée une liste de 5 prénoms, affiche le premier et le dernier, ajoute-en un sixième, trie la liste (`ma_liste.sort()`).
 2. À partir d'une liste de nombres avec doublons, crée un `set` et affiche combien de valeurs uniques il contient.
 3. Crée un dictionnaire représentant un livre (`titre`, `auteur`, `annee`, `prix`), affiche le prix, puis ajoute la clé `lu` (True/False).
 4. Compte les occurrences de chaque lettre dans une phrase (indice : dictionnaire + boucle `for`).
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-1}
 
 - [Tutoriel officiel — structures de données](https://docs.python.org/fr/3/tutorial/datastructures.html)
 
@@ -556,15 +556,15 @@ for cle, valeur in personne.items():
 
 <!-- source : 01-fondamentaux/03-controle-flux.md -->
 
-# Leçon 3 — Contrôle de flux (conditions et boucles)
+# Leçon 3 — Contrôle de flux (conditions et boucles) {#lecon-3-controle-de-flux-conditions-et-boucles}
 
-## Objectifs
+## Objectifs {#objectifs-2}
 
 - Écrire des conditions avec `if / elif / else`.
 - Parcourir des collections avec `for`.
 - Répéter avec `while`, sortir avec `break`, sauter une itération avec `continue`.
 
-## Conditions
+## Conditions {#conditions}
 
 ```python
 note = 15
@@ -584,7 +584,7 @@ else:
 
 Opérateurs logiques combinés : `and`, `or`, `not` (voir leçon 1).
 
-## Boucle `for` — parcourir une séquence
+## Boucle `for` — parcourir une séquence {#boucle-for-parcourir-une-sequence}
 
 ```python
 notes = [12, 15, 9, 18]
@@ -602,7 +602,7 @@ for i, note in enumerate(notes):   # index + valeur
 
 `range(n)`, `range(debut, fin)`, `range(debut, fin, pas)`.
 
-## Boucle `while` — répéter tant qu'une condition est vraie
+## Boucle `while` — répéter tant qu'une condition est vraie {#boucle-while-repeter-tant-qu-une-condition-est-vraie}
 
 ```python
 compteur = 0
@@ -611,7 +611,7 @@ while compteur < 5:
     compteur += 1        # indispensable pour sortir un jour !
 ```
 
-## `break` et `continue`
+## `break` et `continue` {#break-et-continue}
 
 ```python
 for n in range(10):
@@ -622,7 +622,7 @@ for n in range(10):
     print(n)            # affiche 0,1,2,4,5,6
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-2}
 
 1. Demande un nombre, affiche s'il est positif, négatif ou nul.
 2. Affiche la table de multiplication de 7 (de 1 à 10) avec une boucle.
@@ -630,7 +630,7 @@ for n in range(10):
 4. Trouve le plus grand nombre d'une liste avec une boucle (indice : variable `max` initialisée au premier élément).
 5. Boucle infinie contrôlée : demande un mot de passe jusqu'à ce qu'il soit correct (`while True` + `break`).
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-2}
 
 - [Tutoriel officiel — contrôle de flux](https://docs.python.org/fr/3/tutorial/controlflow.html)
 
@@ -639,9 +639,9 @@ for n in range(10):
 
 <!-- source : 01-fondamentaux/04-fonctions.md -->
 
-# Leçon 4 — Fonctions
+# Leçon 4 — Fonctions {#lecon-4-fonctions}
 
-## Objectifs
+## Objectifs {#objectifs-3}
 
 - Définir ses propres fonctions avec `def`.
 - Utiliser les paramètres positionnels, `*args` et `**kwargs`.
@@ -649,7 +649,7 @@ for n in range(10):
 - Connaître les fonctions intégrées essentielles.
 - Distinguer **fonction** et **méthode**.
 
-## Définir une fonction
+## Définir une fonction {#definir-une-fonction}
 
 ```python
 def aire_rectangle(longueur, largeur):
@@ -670,7 +670,7 @@ def salutation(nom, formule="Bonjour"):
     return f"{formule}, {nom} !"
 ```
 
-## `*args` et `**kwargs`
+## `*args` et `**kwargs` {#args-et-kwargs}
 
 ```python
 def somme(*nombres):              # nombre quelconque d'arguments positionnels
@@ -685,7 +685,7 @@ def presentation(**infos):         # nombre quelconque d'arguments nommés
 presentation(nom="Alice", age=25, ville="Paris")
 ```
 
-## Fonctions lambda
+## Fonctions lambda {#fonctions-lambda}
 
 Fonction anonyme en une ligne, pratique pour un usage ponctuel :
 
@@ -700,7 +700,7 @@ triees = sorted(notes, key=lambda n: -n)      # tri décroissant
 
 > Au-delà d'une ligne, préfère une `def` : plus lisible.
 
-## Fonctions intégrées utiles en data analysis
+## Fonctions intégrées utiles en data analysis {#fonctions-integrees-utiles-en-data-analysis}
 
 | Fonction | Rôle | Exemple |
 |---|---|---|
@@ -715,7 +715,7 @@ triees = sorted(notes, key=lambda n: -n)      # tri décroissant
 | `map(f, x)` | applique `f` à chaque élément | voir lambda |
 | `input()` / `print()` | entrée / sortie | voir leçon 1 |
 
-## Fonction vs méthode
+## Fonction vs méthode {#fonction-vs-methode}
 
 - **Fonction** : appelée seule → `len(ma_liste)`, `print(x)`.
 - **Méthode** : attachée à un objet, appelée avec un point → `ma_liste.append(1)`, `texte.upper()`.
@@ -726,7 +726,7 @@ print(len(texte))        # fonction : 7
 print(texte.upper())     # méthode : "BONJOUR"
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-3}
 
 1. Écris `moyenne(notes)` qui renvoie la moyenne d'une liste (sans `sum` si tu veux t'entraîner, avec sinon).
 2. Écris `statistiques(notes)` qui renvoie `(min, max, moyenne)` sous forme de tuple.
@@ -734,7 +734,7 @@ print(texte.upper())     # méthode : "BONJOUR"
 4. Utilise `sorted` avec une `lambda` pour trier une liste de dictionnaires de livres par prix croissant.
 5. Écris une fonction `fibonacci(n)` qui renvoie les `n` premiers termes de la suite de Fibonacci.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-3}
 
 - [Tutoriel officiel — définir des fonctions](https://docs.python.org/fr/3/tutorial/controlflow.html#defining-functions)
 - [Built-in functions](https://docs.python.org/fr/3/library/functions.html)
@@ -744,15 +744,15 @@ print(texte.upper())     # méthode : "BONJOUR"
 
 <!-- source : 01-fondamentaux/05-comprehensions-chaines.md -->
 
-# Leçon 5 — Compréhensions de listes et manipulation de chaînes
+# Leçon 5 — Compréhensions de listes et manipulation de chaînes {#lecon-5-comprehensions-de-listes-et-manipulation-de-chaines}
 
-## Objectifs
+## Objectifs {#objectifs-4}
 
 - Écrire des listes en une ligne avec les **list comprehensions**.
 - Manipuler les chaînes : casse, découpage, recherche, remplacement, jointure.
 - Utiliser les f-strings pour formater proprement.
 
-## List comprehensions
+## List comprehensions {#list-comprehensions}
 
 Syntaxe : `[expression for élément in itérable if condition]`
 
@@ -771,7 +771,7 @@ minuscules = [m.lower() for m in mots]
 longueurs = {m: len(m) for m in mots}                 # dict comprehension
 ```
 
-## Chaînes de caractères (rappels et compléments)
+## Chaînes de caractères (rappels et compléments) {#chaines-de-caracteres-rappels-et-complements}
 
 ```python
 texte = "  Bonjour le Monde  "
@@ -787,7 +787,7 @@ len(texte)             # longueur
 texte[0]               # ' '  (les chaînes sont indexables comme les listes)
 ```
 
-## F-strings (affichage formaté)
+## F-strings (affichage formaté) {#f-strings-affichage-formate}
 
 ```python
 nom = "Alice"
@@ -799,34 +799,34 @@ print(f"{1234567:,}")                  # 1,234,567 (séparateur de milliers, sel
 print(f"{0.95:.0%}")                   # 95% (pourcentage)
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-4}
 
 1. À partir d'une liste de températures en Celsius, crée deux listes par comprehension : une en Fahrenheit, et une ne contenant que celles au-dessus de 25 °C.
 2. Demande une phrase à l'utilisateur, compte combien de voyelles elle contient (comprehension + `in "aeiouy"`).
 3. Transforme une liste de noms propres en une seule chaîne séparée par des virgules, en mettant la première lettre en majuscule (`str.capitalize()`).
 4. À partir d'une liste de phrases, crée un dictionnaire `{phrase: nombre_de_mots}` par dict comprehension.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-4}
 
 - [Tutoriel officiel — comprehensions](https://docs.python.org/fr/3/tutorial/datastructures.html#list-comprehensions)
 - [Méthodes des chaînes](https://docs.python.org/fr/3/library/stdtypes.html#string-methods)
 
-Module suivant : [02 — Gestion des packages](../02-gestion-packages/README.md).
+Module suivant : [02 — Gestion des packages](#02-gestion-des-packages-et-des-environnements).
 
 
 ---
 
 <!-- source : 02-gestion-packages/README.md -->
 
-# 02 — Gestion des packages et des environnements
+# 02 — Gestion des packages et des environnements {#02-gestion-des-packages-et-des-environnements}
 
-## Objectifs
+## Objectifs {#objectifs-5}
 
 - Comprendre le rôle de **pip**, **venv**, **conda** et **uv**.
 - Savoir créer un environnement virtuel isolé par projet.
 - Installer, mettre à jour et figer les dépendances.
 
-## Pourquoi des environnements virtuels ?
+## Pourquoi des environnements virtuels ? {#pourquoi-des-environnements-virtuels}
 
 Chaque projet a besoin de versions précises de bibliothèques. Un **environnement virtuel** (venv) isole les packages d'un projet du reste du système, évitant les conflits.
 
@@ -837,7 +837,7 @@ source .venv/bin/activate       # l'active (Linux/macOS)
 deactivate                      # le quitte
 ```
 
-## pip : le gestionnaire de packages officiel
+## pip : le gestionnaire de packages officiel {#pip-le-gestionnaire-de-packages-officiel}
 
 ```bash
 pip install pandas              # installe
@@ -849,7 +849,7 @@ pip freeze > requirements.txt   # fige les versions du projet
 pip install -r requirements.txt # réinstalle tout (sur une autre machine)
 ```
 
-## uv : l'outil moderne et rapide (recommandé en complément)
+## uv : l'outil moderne et rapide (recommandé en complément) {#uv-l-outil-moderne-et-rapide-recommande-en-complement}
 
 [uv](https://docs.astral.sh/uv/) remplace pip + venv par une seule commande rapide (écrit en Rust) :
 
@@ -861,7 +861,7 @@ uv pip install -r requirements.txt
 uv run python mon_script.py     # exécute avec le bon environnement automatiquement
 ```
 
-## conda : l'incontournable en data science / ML
+## conda : l'incontournable en data science / ML {#conda-l-incontournable-en-data-science-ml}
 
 [Conda](https://docs.conda.io/) gère des environnements **et** des paquets binaires (y compris des bibliothèques non-Python comme CUDA). Très utilisé avec **Anaconda** ou **Miniforge** (version communautaire légère, recommandée) :
 
@@ -875,34 +875,34 @@ conda deactivate
 
 > Pour ce parcours, `venv + pip` (ou `uv`) suffisent largement. Conda devient utile quand tu touches au machine learning avec des dépendances système (GPU, etc.).
 
-## Bonnes pratiques
+## Bonnes pratiques {#bonnes-pratiques}
 
 - Un venv **par projet**, jamais de `pip install` dans l'environnement système (sauf paquets système via `apt`, ex. `python3-venv`).
 - Toujours versionner un `requirements.txt` (ou `pyproject.toml` avec uv) avec ton code.
 - Ne jamais committer le dossier `.venv/` (voir `.gitignore` à la racine).
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-5}
 
 1. Crée un nouveau venv dans un dossier de test, active-le, installe `requests`, vérifie avec `pip show requests`, puis gèle dans un `requirements.txt`.
 2. Recrée le même environnement sur un autre dossier uniquement à partir du `requirements.txt`.
 3. Essaie `uv venv` + `uv pip install` et compare la vitesse avec pip.
 
-Module suivant : [03 — Lecture de fichiers](../03-lecture-fichiers/README.md).
+Module suivant : [03 — Lecture de fichiers](#03-lecture-et-ecriture-de-fichiers-formats-de-donnees).
 
 
 ---
 
 <!-- source : 03-lecture-fichiers/README.md -->
 
-# 03 — Lecture et écriture de fichiers (formats de données)
+# 03 — Lecture et écriture de fichiers (formats de données) {#03-lecture-et-ecriture-de-fichiers-formats-de-donnees}
 
-## Objectifs
+## Objectifs {#objectifs-6}
 
 - Naviguer dans les chemins de fichiers avec `pathlib` (compatible Linux/Windows).
 - Lire et écrire les formats de la roadmap : **CSV**, **JSON**, **Excel**, **Parquet**.
 - Comprendre le contexte `with open(...)` pour les fichiers texte.
 
-## Chemins de fichiers : `pathlib`
+## Chemins de fichiers : `pathlib` {#chemins-de-fichiers-pathlib}
 
 ```python
 from pathlib import Path
@@ -914,7 +914,7 @@ print(fichier.suffix)               # ".csv"
 dossier.mkdir(exist_ok=True)        # crée le dossier s'il n'existe pas
 ```
 
-## Fichiers texte et `with open(...)`
+## Fichiers texte et `with open(...)` {#fichiers-texte-et-with-open}
 
 ```python
 with open("data/notes.txt", "r", encoding="utf-8") as f:
@@ -927,7 +927,7 @@ with open("data/sortie.txt", "w", encoding="utf-8") as f:
 
 Le `with` ferme le fichier automatiquement, même en cas d'erreur.
 
-## CSV (valeurs séparées par des virgules)
+## CSV (valeurs séparées par des virgules) {#csv-valeurs-separees-par-des-virgules}
 
 ```python
 import csv
@@ -940,7 +940,7 @@ with open("data/ventes.csv", newline="", encoding="utf-8") as f:
 
 > Pour l'analyse de données, on utilisera surtout **pandas** (`pd.read_csv`), plus puissant — ce module sert à comprendre le format. `csv` reste utile pour des fichiers simples sans installer pandas.
 
-## JSON
+## JSON {#json}
 
 ```python
 import json
@@ -952,7 +952,7 @@ with open("data/sortie.json", "w", encoding="utf-8") as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
 ```
 
-## Excel (.xlsx)
+## Excel (.xlsx) {#excel-xlsx}
 
 Nécessite `openpyxl` (`pip install openpyxl`) :
 
@@ -963,7 +963,7 @@ df = pd.read_excel("data/ventes.xlsx", sheet_name="Feuil1")
 df.to_excel("data/export.xlsx", index=False)
 ```
 
-## Parquet (format colonne binaire, rapide et compressé)
+## Parquet (format colonne binaire, rapide et compressé) {#parquet-format-colonne-binaire-rapide-et-compresse}
 
 Nécessite `pyarrow` (`pip install pyarrow`) :
 
@@ -976,7 +976,7 @@ df.to_parquet("data/export.parquet", index=False)
 
 > Parquet est le format à privilégier pour les **gros volumes** de données.
 
-## Récapitulatif
+## Récapitulatif {#recapitulatif}
 
 | Format | Lecture (stdlib) | Lecture (data) | Usage typique |
 |---|---|---|---|
@@ -986,20 +986,20 @@ df.to_parquet("data/export.parquet", index=False)
 | Excel | — | `pd.read_excel` | fichiers bureautique |
 | Parquet | — | `pd.read_parquet` | gros volumes, data lakes |
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-6}
 
 1. Crée un dossier `data/` et un fichier `data/produits.csv` à la main (5 lignes : produit, prix, quantité), puis lis-le avec `csv.DictReader` et affiche le prix total de chaque ligne.
 2. Écris un programme qui convertit ce CSV en JSON (liste de dictionnaires) avec `json.dump`.
 3. Avec pandas (module 05), lis le même CSV avec `pd.read_csv` et compare.
 
-Module suivant : [04 — NumPy](../04-numpy/README.md).
+Module suivant : [04 — NumPy](#04-numpy-le-calcul-numerique-vectorise).
 
 
 ---
 
 <!-- source : 04-numpy/README.md -->
 
-# 04 — NumPy : le calcul numérique vectorisé
+# 04 — NumPy : le calcul numérique vectorisé {#04-numpy-le-calcul-numerique-vectorise}
 
 [NumPy](https://numpy.org/doc/stable/) est la brique de base de toute la data science en Python : tableaux multidimensionnels (`ndarray`) et opérations vectorisées ultra-rapides (écrites en C).
 
@@ -1011,28 +1011,28 @@ pip install numpy
 import numpy as np
 ```
 
-## Leçons
+## Leçons {#lecons-1}
 
-1. [Tableaux `ndarray` et opérations](01-ndarray-operations.md) — création, formes, opérations élément par élément, fonctions universelles, agrégations.
-2. [Indexing et slicing](02-indexing-slicing.md) — accès, tranches, masques booléens, fancy indexing.
-3. [Algèbre linéaire et module random](03-algebre-lineaire-random.md) — produits matriciels, normes, génération de nombres aléatoires reproductibles.
+1. [Tableaux `ndarray` et opérations](#numpy-1-tableaux-ndarray-et-operations) — création, formes, opérations élément par élément, fonctions universelles, agrégations.
+2. [Indexing et slicing](#numpy-2-indexing-et-slicing) — accès, tranches, masques booléens, fancy indexing.
+3. [Algèbre linéaire et module random](#numpy-3-algebre-lineaire-et-module-random) — produits matriciels, normes, génération de nombres aléatoires reproductibles.
 
-## À retenir
+## À retenir {#a-retenir}
 
 - Un `ndarray` a un **seul type** de données (souvent `float64`).
 - Les opérations s'appliquent **à tout le tableau d'un coup** : pas de boucle `for`.
 - `np.array([...])` crée un tableau à partir d'une liste Python.
 
-Module suivant : [05 — Pandas](../05-pandas/README.md).
+Module suivant : [05 — Pandas](#05-pandas-la-manipulation-de-donnees-tabulaires).
 
 
 ---
 
 <!-- source : 04-numpy/01-ndarray-operations.md -->
 
-# NumPy 1 — Tableaux `ndarray` et opérations
+# NumPy 1 — Tableaux `ndarray` et opérations {#numpy-1-tableaux-ndarray-et-operations}
 
-## Créer des tableaux
+## Créer des tableaux {#creer-des-tableaux}
 
 ```python
 import numpy as np
@@ -1051,7 +1051,7 @@ plage = np.arange(0, 10, 2)           # [0 2 4 6 8]  (comme range)
 lin = np.linspace(0, 1, 5)            # [0.  0.25 0.5  0.75 1. ]  (5 valeurs espacées)
 ```
 
-## Opérations élément par élément (vectorisées)
+## Opérations élément par élément (vectorisées) {#operations-element-par-element-vectorisees}
 
 ```python
 x = np.array([1, 2, 3, 4])
@@ -1063,7 +1063,7 @@ x ** 2       # array([ 1,  4,  9, 16])
 y / x        # array([10., 10., 10., 10.])
 ```
 
-## Fonctions universelles (ufunc)
+## Fonctions universelles (ufunc) {#fonctions-universelles-ufunc}
 
 ```python
 np.sqrt(x)          # racine carrée de chaque élément
@@ -1073,7 +1073,7 @@ np.abs(np.array([-3, 5]))   # valeur absolue -> [3 5]
 np.sin(x)
 ```
 
-## Agrégations
+## Agrégations {#agregations}
 
 ```python
 x = np.array([1, 2, 3, 4])
@@ -1090,7 +1090,7 @@ b.sum(axis=1)   # somme par ligne   -> array([ 6, 15])
 b.mean(axis=0)  # moyenne par colonne
 ```
 
-## Broadcasting (diffusion)
+## Broadcasting (diffusion) {#broadcasting-diffusion}
 
 NumPy étire automatiquement les dimensions compatibles :
 
@@ -1101,14 +1101,14 @@ vecteur = np.array([100, 200, 300])
 matrice + vecteur     # ajoute le vecteur à chaque ligne
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-7}
 
 1. Crée un tableau de 0 à 99 (`np.arange`) ; calcule la somme, la moyenne et l'écart-type.
 2. Crée une matrice 3×3 de nombres aléatoires entiers entre 0 et 9 (`np.random.default_rng(0).integers(...)`) ; affiche la somme de chaque ligne et de chaque colonne.
 3. Convertis une liste de températures en Celsius en Fahrenheit avec une seule opération vectorisée : `f = c * 9/5 + 32`.
 4. Crée un vecteur de 1000 valeurs entre 0 et 1, compte combien sont supérieures à 0.5 (`np.sum(v > 0.5)`).
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-5}
 
 - [NumPy : quickstart officiel](https://numpy.org/doc/stable/user/quickstart.html)
 
@@ -1117,9 +1117,9 @@ matrice + vecteur     # ajoute le vecteur à chaque ligne
 
 <!-- source : 04-numpy/02-indexing-slicing.md -->
 
-# NumPy 2 — Indexing et slicing
+# NumPy 2 — Indexing et slicing {#numpy-2-indexing-et-slicing}
 
-## Accès élémentaire
+## Accès élémentaire {#acces-elementaire}
 
 ```python
 import numpy as np
@@ -1134,7 +1134,7 @@ a[::2]   # array([10, 30, 50])   pas de 2
 
 > Un slice renvoie une **vue** (view) : modifier le slice modifie le tableau d'origine. Utilise `.copy()` pour une copie indépendante.
 
-## Matrices 2D
+## Matrices 2D {#matrices-2d}
 
 ```python
 m = np.array([[1, 2, 3],
@@ -1147,7 +1147,7 @@ m[:, 1]      # array([2, 5, 8])  (colonne entière)
 m[:2, 1:]    # sous-matrice : lignes 0-1, colonnes 1-2 -> [[2,3],[5,6]]
 ```
 
-## Masques booléens (sélection par condition)
+## Masques booléens (sélection par condition) {#masques-booleens-selection-par-condition}
 
 ```python
 v = np.array([3, 12, 7, 20, 5])
@@ -1160,7 +1160,7 @@ v[masque] = 0              # modifie les éléments sélectionnés
 
 C'est le mécanisme central du filtrage en data analysis.
 
-## Fancy indexing (indexation par liste d'indices)
+## Fancy indexing (indexation par liste d'indices) {#fancy-indexing-indexation-par-liste-d-indices}
 
 ```python
 a = np.array([10, 20, 30, 40, 50])
@@ -1171,14 +1171,14 @@ m[[0, 2]]           # lignes 0 et 2 -> [[1,2],[5,6]]
 m[[0, 2], [1, 0]]   # éléments (0,1) et (2,0) -> [2, 5]
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-8}
 
 1. Crée une matrice 4×4 d'entiers de 1 à 16 (`np.arange(1, 17).reshape(4, 4)`) ; extrais la diagonale, la dernière colonne, et la sous-matrice centrale 2×2.
 2. Dans un vecteur de 100 nombres aléatoires entre 0 et 1, remplace par -1 toutes les valeurs < 0.1, puis compte combien de -1 il y a.
 3. Trie un vecteur avec `np.sort`, et trouve les indices des 3 plus grandes valeurs (`np.argsort`).
 4. À partir d'une matrice 5×3, sélectionne uniquement les lignes dont la moyenne dépasse la moyenne globale de la matrice.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-6}
 
 - [NumPy : indexing](https://numpy.org/doc/stable/user/basics.indexing.html)
 
@@ -1187,9 +1187,9 @@ m[[0, 2], [1, 0]]   # éléments (0,1) et (2,0) -> [2, 5]
 
 <!-- source : 04-numpy/03-algebre-lineaire-random.md -->
 
-# NumPy 3 — Algèbre linéaire et module random
+# NumPy 3 — Algèbre linéaire et module random {#numpy-3-algebre-lineaire-et-module-random}
 
-## Algèbre linéaire (`np.linalg`)
+## Algèbre linéaire (`np.linalg`) {#algebre-lineaire-np-linalg}
 
 ```python
 import numpy as np
@@ -1215,7 +1215,7 @@ Valeurs/vecteurs propres (utile en PCA, plus tard) :
 valeurs, vecteurs = np.linalg.eig(A)
 ```
 
-## Module random (`np.random`)
+## Module random (`np.random`) {#module-random-np-random}
 
 Utilise toujours un **générateur** (`default_rng`) pour des résultats reproductibles :
 
@@ -1231,26 +1231,26 @@ rng.shuffle(...)                    # mélange en place (sur un tableau)
 
 Lois utiles en analyse : `normal`, `uniform`, `binomial`, `poisson`.
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-9}
 
 1. Génère (avec graine 0) 10 000 valeurs d'une loi normale de moyenne 50 et d'écart-type 10 ; vérifie avec `.mean()` et `.std()` que tu retombes bien dessus (approximativement).
 2. Crée deux matrices 3×3 aléatoires, calcule leur produit matriciel, et vérifie que `(A @ B).T == B.T @ A.T`.
 3. Simule 1000 lancers de dé (`rng.integers(1, 7, size=1000)`) et compte la fréquence de chaque face.
 4. Crée un vecteur aléatoire de taille 100, normalise-le pour que sa norme euclidienne fasse 1.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-7}
 
 - [numpy.linalg](https://numpy.org/doc/stable/reference/routines.linalg.html)
 - [numpy.random Generator](https://numpy.org/doc/stable/reference/random/generator.html)
 
-Module suivant : [05 — Pandas](../05-pandas/README.md).
+Module suivant : [05 — Pandas](#05-pandas-la-manipulation-de-donnees-tabulaires).
 
 
 ---
 
 <!-- source : 05-pandas/README.md -->
 
-# 05 — Pandas : la manipulation de données tabulaires
+# 05 — Pandas : la manipulation de données tabulaires {#05-pandas-la-manipulation-de-donnees-tabulaires}
 
 [Pandas](https://pandas.pydata.org/docs/) est **la** bibliothèque de référence pour lire, transformer et analyser des données structurées (CSV, Excel, SQL...) en Python.
 
@@ -1262,31 +1262,31 @@ pip install pandas
 import pandas as pd
 ```
 
-## Leçons
+## Leçons {#lecons-2}
 
-1. [Series et DataFrame](01-series-dataframe.md) — créer, inspecter (`head`, `info`, `describe`, `shape`, `dtypes`).
-2. [Lire et écrire des données](02-lecture-ecriture.md) — CSV, Excel, JSON, Parquet, SQL.
-3. [Indexing, slicing et filtrage](03-indexing-filtrage.md) — `loc`, `iloc`, masques booléens, `query`.
-4. [GroupBy et agrégation](04-groupby-agregation.md) — `groupby`, `agg`, `value_counts`, tableaux croisés.
-5. [Merging et joining](05-merge-join.md) — `merge`, `concat`, jointures type SQL.
-6. [Reshaping](06-reshape.md) — `pivot_table`, `melt`, `stack`/`unstack`, `crosstab`.
+1. [Series et DataFrame](#pandas-1-series-et-dataframe) — créer, inspecter (`head`, `info`, `describe`, `shape`, `dtypes`).
+2. [Lire et écrire des données](#pandas-2-lire-et-ecrire-des-donnees) — CSV, Excel, JSON, Parquet, SQL.
+3. [Indexing, slicing et filtrage](#pandas-3-indexing-slicing-et-filtrage) — `loc`, `iloc`, masques booléens, `query`.
+4. [GroupBy et agrégation](#pandas-4-groupby-et-agregation) — `groupby`, `agg`, `value_counts`, tableaux croisés.
+5. [Merging et joining](#pandas-5-merging-et-joining-jointures) — `merge`, `concat`, jointures type SQL.
+6. [Reshaping](#pandas-6-reshaping-changer-la-forme-des-donnees) — `pivot_table`, `melt`, `stack`/`unstack`, `crosstab`.
 
-## À retenir
+## À retenir {#a-retenir-1}
 
 - Un **DataFrame** = tableau 2D avec des étiquettes de lignes (index) et de colonnes.
 - Une **Series** = une seule colonne (ou ligne) avec un index.
 - Pandas s'appuie sur NumPy : même logique de vectorisation.
 
-Module suivant : [06 — Nettoyage de données](../06-nettoyage/README.md).
+Module suivant : [06 — Nettoyage de données](#06-nettoyage-de-donnees-data-cleaning).
 
 
 ---
 
 <!-- source : 05-pandas/01-series-dataframe.md -->
 
-# Pandas 1 — Series et DataFrame
+# Pandas 1 — Series et DataFrame {#pandas-1-series-et-dataframe}
 
-## Series (une colonne)
+## Series (une colonne) {#series-une-colonne}
 
 ```python
 import pandas as pd
@@ -1297,7 +1297,7 @@ print(s.mean())      # 20.0
 print(s + 5)         # opérations vectorisées comme NumPy
 ```
 
-## DataFrame (le tableau central)
+## DataFrame (le tableau central) {#dataframe-le-tableau-central}
 
 ```python
 df = pd.DataFrame({
@@ -1315,7 +1315,7 @@ print(df.dtypes)     # type de chaque colonne
 print(df.index)      # index des lignes
 ```
 
-## Inspection rapide (indispensable)
+## Inspection rapide (indispensable) {#inspection-rapide-indispensable}
 
 ```python
 df.info()            # types, valeurs non nulles, mémoire
@@ -1323,7 +1323,7 @@ print(df.describe()) # statistiques des colonnes numériques (count, mean, std, 
 print(df["ville"].value_counts())  # effectif par catégorie
 ```
 
-## Accéder aux colonnes et lignes
+## Accéder aux colonnes et lignes {#acceder-aux-colonnes-et-lignes}
 
 ```python
 df["nom"]            # une colonne -> Series
@@ -1338,13 +1338,13 @@ df.loc[0]            # ligne d'index 0 (toutes colonnes)
 df.iloc[0]           # première ligne (position)
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-10}
 
 1. Crée un DataFrame de 5 élèves avec colonnes `nom`, `note_maths`, `note_francais` ; affiche `describe()`.
 2. Crée une Series de températures journalières indexées par des dates (strings "2024-01-01"...) ; affiche la température max et le jour correspondant (`idxmax()`).
 3. À partir du DataFrame élèves, crée une nouvelle colonne `moyenne` = moyenne des deux notes.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-8}
 
 - [Pandas : 10 minutes to pandas](https://pandas.pydata.org/docs/user_guide/10min.html)
 - [DataFrame vs Series](https://pandas.pydata.org/docs/getting_started/basics.html)
@@ -1354,9 +1354,9 @@ df.iloc[0]           # première ligne (position)
 
 <!-- source : 05-pandas/02-lecture-ecriture.md -->
 
-# Pandas 2 — Lire et écrire des données
+# Pandas 2 — Lire et écrire des données {#pandas-2-lire-et-ecrire-des-donnees}
 
-## Lire des fichiers locaux
+## Lire des fichiers locaux {#lire-des-fichiers-locaux}
 
 ```python
 import pandas as pd
@@ -1371,13 +1371,13 @@ df = pd.read_parquet("data/ventes.parquet")             # Parquet (nécessite py
 
 Options utiles de `read_csv` : `header=0`, `names=[...]`, `skiprows=n`, `encoding="utf-8"` ou `"latin-1"`, `na_values=["N/A", "-"]`, `parse_dates=["date"]`, `dayfirst=True`.
 
-## Lire depuis une URL
+## Lire depuis une URL {#lire-depuis-une-url}
 
 ```python
 df = pd.read_csv("https://raw.githubusercontent.com/.../fichier.csv")
 ```
 
-## Lire depuis une base SQL
+## Lire depuis une base SQL {#lire-depuis-une-base-sql}
 
 ```python
 import sqlite3
@@ -1385,9 +1385,9 @@ con = sqlite3.connect("data/ma_base.db")
 df = pd.read_sql_query("SELECT * FROM clients WHERE ville = 'Paris'", con)
 ```
 
-(Voir le [module 10 — SQL](../10-sql/README.md) pour aller plus loin.)
+(Voir le [module 10 — SQL](#10-sql-avec-python) pour aller plus loin.)
 
-## Écrire
+## Écrire {#ecrire}
 
 ```python
 df.to_csv("data/sortie.csv", index=False)          # index=False : ne pas écrire l'index comme colonne
@@ -1398,13 +1398,13 @@ df.to_parquet("data/sortie.parquet", index=False)  # nécessite pyarrow
 df.to_sql("table_resultat", con, if_exists="replace", index=False)
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-11}
 
 1. Crée un CSV à la main (ou exporte un tableur) avec 10 lignes et 4 colonnes, lis-le avec `pd.read_csv`, affiche `info()` et `describe()`.
 2. Re-lis le même fichier en forçant la colonne date avec `parse_dates` et vérifie le `dtype`.
 3. Écris le DataFrame filtré (lignes où une colonne numérique > seuil) dans un nouveau CSV **et** un Parquet ; compare les tailles de fichiers.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-9}
 
 - [Pandas : IO tools (lecture/écriture)](https://pandas.pydata.org/docs/user_guide/io.html)
 
@@ -1413,9 +1413,9 @@ df.to_sql("table_resultat", con, if_exists="replace", index=False)
 
 <!-- source : 05-pandas/03-indexing-filtrage.md -->
 
-# Pandas 3 — Indexing, slicing et filtrage
+# Pandas 3 — Indexing, slicing et filtrage {#pandas-3-indexing-slicing-et-filtrage}
 
-## `loc` (par étiquette) et `iloc` (par position)
+## `loc` (par étiquette) et `iloc` (par position) {#loc-par-etiquette-et-iloc-par-position}
 
 ```python
 import pandas as pd
@@ -1433,7 +1433,7 @@ df.iloc[0:2]            # 2 premières lignes (borne exclue, comme les slices Py
 df.iloc[:, 1:3]         # toutes les lignes, colonnes 1 et 2
 ```
 
-## Filtrage par conditions (masques booléens)
+## Filtrage par conditions (masques booléens) {#filtrage-par-conditions-masques-booleens}
 
 ```python
 # une condition
@@ -1452,21 +1452,21 @@ df[df["nom"].str.startswith("A")]
 df[df["nom"].str.contains("a", case=False)]
 ```
 
-## `query()` : filtrer avec une expression textuelle
+## `query()` : filtrer avec une expression textuelle {#query-filtrer-avec-une-expression-textuelle}
 
 ```python
 df.query("age > 25 and ville == 'Lyon'")
 df.query("salaire > @seuil")   # @seuil fait référence à une variable Python du scope
 ```
 
-## Sélectionner + modifier
+## Sélectionner + modifier {#selectionner-modifier}
 
 ```python
 df.loc[df["ville"] == "Paris", "salaire"] = df["salaire"] * 1.1   # augmentation de 10 % à Paris
 df.loc[df["age"] < 18, "age"] = None                               # valeurs manquantes (voir module 06)
 ```
 
-## Trier
+## Trier {#trier}
 
 ```python
 df.sort_values("salaire")                        # croissant
@@ -1474,14 +1474,14 @@ df.sort_values(["ville", "salaire"], ascending=[True, False])  # par ville puis 
 df.sort_index()
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-12}
 
 1. Sur un DataFrame de ventes (date, produit, quantité, prix), sélectionne les ventes de janvier 2024 pour le produit "X".
 2. Compte combien de lignes ont au moins une valeur manquante (`df.isna().any(axis=1).sum()`).
 3. Remplace les salaires inférieurs à 2000 par la médiane des salaires (`df["salaire"].median()`).
 4. Trie par catégorie puis par montant décroissant, et garde les 10 premières lignes (`head(10)`).
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-10}
 
 - [Pandas : indexing and selecting data](https://pandas.pydata.org/docs/user_guide/indexing.html)
 
@@ -1490,7 +1490,7 @@ df.sort_index()
 
 <!-- source : 05-pandas/04-groupby-agregation.md -->
 
-# Pandas 4 — GroupBy et agrégation
+# Pandas 4 — GroupBy et agrégation {#pandas-4-groupby-et-agregation}
 
 Le pattern fondamental de l'analyse : **split → apply → combine**.
 
@@ -1505,7 +1505,7 @@ df = pd.DataFrame({
 })
 ```
 
-## `groupby` + agrégation
+## `groupby` + agrégation {#groupby-agregation}
 
 ```python
 df.groupby("ville")["quantite"].sum()          # total par ville
@@ -1522,7 +1522,7 @@ df.groupby(["ville", "produit"])[["quantite", "prix"]].sum()   # double groupeme
 
 Autres agrégations : `min`, `max`, `median`, `std`, `var`, `first`, `last`, `nunique` (nombre de valeurs uniques).
 
-## `value_counts` et `crosstab`
+## `value_counts` et `crosstab` {#valuecounts-et-crosstab}
 
 ```python
 df["ville"].value_counts()                       # effectifs par valeur
@@ -1531,20 +1531,20 @@ pd.crosstab(df["ville"], df["produit"])         # tableau croisé (effectifs)
 pd.crosstab(df["ville"], df["produit"], values=df["prix"], aggfunc="sum")  # avec agrégation
 ```
 
-## `transform` (garder la taille du DataFrame)
+## `transform` (garder la taille du DataFrame) {#transform-garder-la-taille-du-dataframe}
 
 ```python
 df["ecart_a_la_moyenne_ville"] = df["prix"] - df.groupby("ville")["prix"].transform("mean")
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-13}
 
 1. Sur un DataFrame de ventes (mois, vendeur, montant) : calcule le chiffre d'affaires total par vendeur, puis le vendeur avec le plus gros CA.
 2. Groupe par catégorie et affiche pour chaque groupe : nombre d'articles, prix min, prix max, prix moyen.
 3. Avec `crosstab`, fais un tableau ville × produit avec la somme des quantités, et ajoute les marges (`margins=True`).
 4. Calcule, par ville, la part de chaque produit dans le CA total de la ville (indice : `groupby` + `transform("sum")` puis division).
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-11}
 
 - [Pandas : group by (split-apply-combine)](https://pandas.pydata.org/docs/user_guide/groupby.html)
 
@@ -1553,7 +1553,7 @@ df["ecart_a_la_moyenne_ville"] = df["prix"] - df.groupby("ville")["prix"].transf
 
 <!-- source : 05-pandas/05-merge-join.md -->
 
-# Pandas 5 — Merging et joining (jointures)
+# Pandas 5 — Merging et joining (jointures) {#pandas-5-merging-et-joining-jointures}
 
 Combiner plusieurs DataFrames est aussi fréquent que le groupby. `pd.merge` reproduit les jointures SQL.
 
@@ -1574,7 +1574,7 @@ commandes = pd.DataFrame({
 })
 ```
 
-## Les 4 types de jointure (`how`)
+## Les 4 types de jointure (`how`) {#les-4-types-de-jointure-how}
 
 ```python
 pd.merge(clients, commandes, on="id_client", how="inner")   # seulement les clients avec commandes (défaut)
@@ -1583,7 +1583,7 @@ pd.merge(clients, commandes, on="id_client", how="right")   # toutes les command
 pd.merge(clients, commandes, on="id_client", how="outer")   # tout, des deux côtés (NaN si absent)
 ```
 
-## Options utiles
+## Options utiles {#options-utiles}
 
 ```python
 pd.merge(clients, commandes, left_on="id_client", right_on="id_client_ref")  # noms de clés différents
@@ -1592,7 +1592,7 @@ pd.merge(a, b, on=["ville", "annee"])                       # jointure sur plusi
 # indicateurs : indicator=True ajoute une colonne _merge (left_only, right_only, both)
 ```
 
-## `concat` : empiler des DataFrames
+## `concat` : empiler des DataFrames {#concat-empiler-des-dataframes}
 
 ```python
 janv = pd.read_csv("data/ventes_2024_01.csv")
@@ -1603,33 +1603,33 @@ tout = pd.concat([janv, fev], ignore_index=True)      # empile verticalement (ax
 pd.concat([df_a, df_b], axis=1)
 ```
 
-## `join` (raccourci sur l'index)
+## `join` (raccourci sur l'index) {#join-raccourci-sur-l-index}
 
 ```python
 df_a.join(df_b, on="id_client", lsuffix="_a", rsuffix="_b")
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-14}
 
 1. Crée deux DataFrames : produits (id, nom, categorie) et ventes (id_produit, quantite, date). Fais une jointure pour obtenir les ventes avec le nom du produit.
 2. Identifie les produits jamais vendus (`how="left"` + `isna()` sur la colonne de ventes, ou `indicator=True`).
 3. Fusionne 3 CSV mensuels avec `concat`, ajoute une colonne `mois` avant chaque concat, puis fais un groupby par mois.
 4. Deux DataFrames avec des clés nommées différemment : jointure avec `left_on`/`right_on`.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-12}
 
 - [Pandas : merge, join, concatenate](https://pandas.pydata.org/docs/user_guide/merging.html)
 
-Leçon suivante : [Reshaping](06-reshape.md).
+Leçon suivante : [Reshaping](#pandas-6-reshaping-changer-la-forme-des-donnees).
 
 
 ---
 
 <!-- source : 05-pandas/06-reshape.md -->
 
-# Pandas 6 — Reshaping (changer la forme des données)
+# Pandas 6 — Reshaping (changer la forme des données) {#pandas-6-reshaping-changer-la-forme-des-donnees}
 
-## `pivot_table` : du long au large
+## `pivot_table` : du long au large {#pivottable-du-long-au-large}
 
 ```python
 import pandas as pd
@@ -1647,7 +1647,7 @@ pd.pivot_table(ventes, values="ca", index="date", columns="produit", aggfunc="su
 # 2024-02          120  200
 ```
 
-## `melt` : du large au long (opération inverse)
+## `melt` : du large au long (opération inverse) {#melt-du-large-au-long-operation-inverse}
 
 ```python
 large = pd.DataFrame({"id": [1, 2], "jan": [10, 20], "fev": [30, 40]})
@@ -1659,7 +1659,7 @@ pd.melt(large, id_vars="id", var_name="mois", value_name="valeur")
 # 3   2   fev      40
 ```
 
-## `stack` / `unstack`
+## `stack` / `unstack` {#stack-unstack}
 
 ```python
 df = pd.DataFrame({("A", "x"): [1, 2], ("A", "y"): [3, 4]}, index=["u", "v"])
@@ -1668,13 +1668,13 @@ df.stack()      # passe les colonnes en index -> Series multi-index
 df.unstack()    # opération inverse
 ```
 
-## `crosstab` (rappel, version reshaping)
+## `crosstab` (rappel, version reshaping) {#crosstab-rappel-version-reshaping}
 
 ```python
 pd.crosstab(ventes["date"], ventes["produit"], values=ventes["ca"], aggfunc="sum", fill_value=0)
 ```
 
-## Quand utiliser quoi ?
+## Quand utiliser quoi ? {#quand-utiliser-quoi}
 
 | Situation | Fonction |
 |---|---|
@@ -1683,51 +1683,51 @@ pd.crosstab(ventes["date"], ventes["produit"], values=ventes["ca"], aggfunc="sum
 | Agréger avec effectifs par combinaison de catégories | `crosstab` |
 | Colonnes à plusieurs niveaux ↔ index hiérarchique | `stack` / `unstack` |
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-15}
 
 1. À partir d'un DataFrame large (client, jan, fev, mar, avr), produis un DataFrame long avec `melt`, puis un `pivot_table` qui revient au format de départ.
 2. Construis un tableau croisé mois × catégorie avec le CA moyen, rempli de 0 quand il n'y a pas de vente.
 3. Prends un DataFrame avec colonnes MultiIndex et aplatis-le avec `stack`.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-13}
 
 - [Pandas : reshaping and pivot tables](https://pandas.pydata.org/docs/user_guide/reshaping.html)
 
-Module suivant : [06 — Nettoyage de données](../06-nettoyage/README.md).
+Module suivant : [06 — Nettoyage de données](#06-nettoyage-de-donnees-data-cleaning).
 
 
 ---
 
 <!-- source : 06-nettoyage/README.md -->
 
-# 06 — Nettoyage de données (Data Cleaning)
+# 06 — Nettoyage de données (Data Cleaning) {#06-nettoyage-de-donnees-data-cleaning}
 
 > « 80 % du travail d'un data analyst, c'est nettoyer les données. »
 
 Avant toute analyse fiable, il faut traiter les valeurs manquantes, les outliers, les mauvais types, le texte sale et les catégories incohérentes.
 
-## Leçons
+## Leçons {#lecons-3}
 
-1. [Valeurs manquantes](01-valeurs-manquantes.md) — `isna`/`isnull`, `dropna`, imputation, `ffill`/`bfill`.
-2. [Détection des outliers](02-outliers.md) — IQR, z-score, visualisation.
-3. [Conversion de types et parsing de dates](03-types-dates.md) — `astype`, `to_datetime`, `to_numeric`.
-4. [Nettoyage de texte](04-texte.md) — `strip`, `replace`, `split`, expressions régulières (`re`), méthodes `.str` de pandas.
-5. [Encodage des catégories](05-categories.md) — `astype("category")`, encodage one-hot (`get_dummies`).
+1. [Valeurs manquantes](#nettoyage-1-valeurs-manquantes) — `isna`/`isnull`, `dropna`, imputation, `ffill`/`bfill`.
+2. [Détection des outliers](#nettoyage-2-detection-des-outliers-valeurs-aberrantes) — IQR, z-score, visualisation.
+3. [Conversion de types et parsing de dates](#nettoyage-3-conversion-de-types-et-parsing-de-dates) — `astype`, `to_datetime`, `to_numeric`.
+4. [Nettoyage de texte](#nettoyage-4-nettoyage-de-texte) — `strip`, `replace`, `split`, expressions régulières (`re`), méthodes `.str` de pandas.
+5. [Encodage des catégories](#nettoyage-5-encodage-des-categories) — `astype("category")`, encodage one-hot (`get_dummies`).
 
-## Ordre de travail conseillé
+## Ordre de travail conseillé {#ordre-de-travail-conseille}
 
 1. Charger → 2. Inspecter (`info`, `describe`, `isna().sum()`) → 3. Types et dates → 4. Texte → 5. Valeurs manquantes → 6. Outliers → 7. Catégories → 8. Sauvegarder la version propre.
 
-Module suivant : [07 — Analyse exploratoire (EDA)](../07-eda/README.md).
+Module suivant : [07 — Analyse exploratoire (EDA)](#07-analyse-exploratoire-des-donnees-eda).
 
 
 ---
 
 <!-- source : 06-nettoyage/01-valeurs-manquantes.md -->
 
-# Nettoyage 1 — Valeurs manquantes
+# Nettoyage 1 — Valeurs manquantes {#nettoyage-1-valeurs-manquantes}
 
-## Détecter
+## Détecter {#detecter}
 
 ```python
 import pandas as pd
@@ -1741,7 +1741,7 @@ df.isna().mean() * 100  # pourcentage de manquants par colonne
 df.isna().any(axis=1)   # True pour les lignes qui ont au moins un manquant
 ```
 
-## Supprimer (`dropna`) vs imputer
+## Supprimer (`dropna`) vs imputer {#supprimer-dropna-vs-imputer}
 
 ```python
 df.dropna()                  # supprime les lignes avec au moins un NaN
@@ -1753,7 +1753,7 @@ df.dropna(axis=1)            # supprime les COLONNES avec des NaN (how="all" pou
 df = df.drop(columns=["b"]) if df["b"].isna().mean() > 0.5 else df
 ```
 
-## Imputer (remplacer)
+## Imputer (remplacer) {#imputer-remplacer}
 
 ```python
 df["a"].fillna(df["a"].mean())     # par la moyenne
@@ -1763,7 +1763,7 @@ df["a"].fillna(df["a"].mode()[0])  # par le mode (colonne catégorielle)
 df["ville"].fillna("Inconnu")
 ```
 
-## Propagation avant/arrière (`ffill` / `bfill`)
+## Propagation avant/arrière (`ffill` / `bfill`) {#propagation-avant-arriere-ffill-bfill}
 
 Idéal pour les séries temporelles :
 
@@ -1774,14 +1774,14 @@ s.bfill()   # backward fill : [1, 4, 4, 4, NaN] (propage la suivante)
 df.ffill()  # fonctionne aussi sur DataFrame, colonne par colonne
 ```
 
-## Interpolation (pour les séries temporelles)
+## Interpolation (pour les séries temporelles) {#interpolation-pour-les-series-temporelles}
 
 ```python
 df["temperature"].interpolate(method="linear")          # interpolation linéaire
 df["temperature"].interpolate(method="time")            # pondérée par le temps (index = dates)
 ```
 
-## Règle de décision
+## Règle de décision {#regle-de-decision}
 
 | Situation | Choix |
 |---|---|
@@ -1790,13 +1790,13 @@ df["temperature"].interpolate(method="time")            # pondérée par le temp
 | Série temporelle | `ffill`/`bfill` ou `interpolate` |
 | Le manquant a un sens métier (« aucun achat » = 0) | remplacer par une valeur explicite |
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-16}
 
 1. Crée un DataFrame avec 20 % de valeurs manquantes aléatoires ; affiche le % de manquants par colonne, supprime les colonnes à plus de 50 %, impute le reste par la médiane.
 2. Sur une série temporelle de températures avec des trous, compare `ffill`, `bfill` et `interpolate`.
 3. Impute une colonne catégorielle par son mode.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-14}
 
 - [Pandas : missing data](https://pandas.pydata.org/docs/user_guide/missing_data.html)
 
@@ -1805,16 +1805,16 @@ df["temperature"].interpolate(method="time")            # pondérée par le temp
 
 <!-- source : 06-nettoyage/02-outliers.md -->
 
-# Nettoyage 2 — Détection des outliers (valeurs aberrantes)
+# Nettoyage 2 — Détection des outliers (valeurs aberrantes) {#nettoyage-2-detection-des-outliers-valeurs-aberrantes}
 
-## Inspection visuelle d'abord
+## Inspection visuelle d'abord {#inspection-visuelle-d-abord}
 
 ```python
 df["colonne"].plot.box()          # boîte à moustaches (matplotlib, voir module 08)
 df["colonne"].hist(bins=50)
 ```
 
-## Méthode IQR (écart interquartile)
+## Méthode IQR (écart interquartile) {#methode-iqr-ecart-interquartile}
 
 Un outlier est une valeur hors de `[Q1 - 1.5*IQR, Q3 + 1.5*IQR]`.
 
@@ -1833,7 +1833,7 @@ df[masque_outliers]          # voir les lignes concernées
 
 Variante stricte (outliers extrêmes) : facteur 3 au lieu de 1.5.
 
-## Méthode du z-score
+## Méthode du z-score {#methode-du-z-score}
 
 Un outlier a un z-score |z| > 3 (écarts à la moyenne supérieurs à 3 écarts-types) :
 
@@ -1845,7 +1845,7 @@ masque = z.abs() > 3
 
 > Le z-score suppose une distribution à peu près normale ; l'IQR est plus robuste.
 
-## Traiter les outliers
+## Traiter les outliers {#traiter-les-outliers}
 
 ```python
 # supprimer les lignes
@@ -1858,13 +1858,13 @@ df.loc[df["colonne"] < borne_inf, "colonne"] = borne_inf
 
 Ne supprime jamais un outlier sans l'avoir compris : c'est peut-être une vraie valeur importante.
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-17}
 
 1. Génère 1000 salaires normaux (moyenne 3000, écart-type 500) + 5 valeurs aberrantes (ex. 50000) ; détecte-les avec IQR et avec z-score ; compare.
 2. Sur un DataFrame de ventes, écrête les quantités négatives et les prix > Q3 + 3*IQR.
 3. Compte les outliers par catégorie (`groupby` sur une colonne catégorielle, applique le masque IQR par groupe).
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-15}
 
 - [Pandas : quantiles](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.quantile.html)
 
@@ -1873,9 +1873,9 @@ Ne supprime jamais un outlier sans l'avoir compris : c'est peut-être une vraie 
 
 <!-- source : 06-nettoyage/03-types-dates.md -->
 
-# Nettoyage 3 — Conversion de types et parsing de dates
+# Nettoyage 3 — Conversion de types et parsing de dates {#nettoyage-3-conversion-de-types-et-parsing-de-dates}
 
-## Vérifier et convertir les types
+## Vérifier et convertir les types {#verifier-et-convertir-les-types}
 
 ```python
 df.dtypes
@@ -1893,7 +1893,7 @@ pd.to_numeric(df["prix"], errors="coerce")     # "12,50" -> NaN (à cause de la 
 pd.to_numeric(df["prix"].str.replace(",", "."), errors="coerce")  # d'abord nettoyer, puis convertir
 ```
 
-## Dates : `pd.to_datetime`
+## Dates : `pd.to_datetime` {#dates-pd-todatetime}
 
 ```python
 df["date"] = pd.to_datetime(df["date"], format="%d/%m/%Y")          # format explicite (rapide)
@@ -1916,7 +1916,7 @@ df["date"].dt.is_month_end  # booléen
 df["mois"] = df["date"].dt.to_period("M")   # 2024-01
 ```
 
-## Trier et filtrer sur les dates
+## Trier et filtrer sur les dates {#trier-et-filtrer-sur-les-dates}
 
 ```python
 df = df.sort_values("date")
@@ -1924,7 +1924,7 @@ janvier = df[(df["date"] >= "2024-01-01") & (df["date"] < "2024-02-01")]
 recent = df[df["date"] >= pd.Timestamp("2024-06-01")]
 ```
 
-## Durées (`Timedelta`)
+## Durées (`Timedelta`) {#durees-timedelta}
 
 ```python
 df["duree"] = df["date_fin"] - df["date_debut"]
@@ -1932,13 +1932,13 @@ df["duree"].dt.days
 df["date_fin"] = df["date_debut"] + pd.Timedelta(days=7)
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-18}
 
 1. Un CSV avec une colonne `date` au format "13/02/2024" et une colonne `prix` au format "1 234,56 €" : convertis-les proprement (`str.replace` + `to_datetime`/`to_numeric`).
 2. Extraie année, mois et jour de la semaine d'une colonne date, puis groupe les ventes par jour de la semaine.
 3. Calcule l'ancienneté en jours entre une colonne `date_inscription` et aujourd'hui (`pd.Timestamp.now()`).
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-16}
 
 - [Pandas : timeseries / dates](https://pandas.pydata.org/docs/user_guide/timeseries.html)
 - [Formats de date (strftime)](https://docs.python.org/fr/3/library/datetime.html#strftime-and-strptime-format-codes)
@@ -1948,9 +1948,9 @@ df["date_fin"] = df["date_debut"] + pd.Timedelta(days=7)
 
 <!-- source : 06-nettoyage/04-texte.md -->
 
-# Nettoyage 4 — Nettoyage de texte
+# Nettoyage 4 — Nettoyage de texte {#nettoyage-4-nettoyage-de-texte}
 
-## Méthodes `.str` de pandas (vectorisées)
+## Méthodes `.str` de pandas (vectorisées) {#methodes-str-de-pandas-vectorisees}
 
 ```python
 import pandas as pd
@@ -1975,7 +1975,7 @@ Extraire avec des groupes nommés :
 s.str.extract(r"(\w+)\s+(\w+)")          # deux groupes : prénom + nom -> DataFrame 2 colonnes
 ```
 
-## Expressions régulières avec `re` (module standard)
+## Expressions régulières avec `re` (module standard) {#expressions-regulieres-avec-re-module-standard}
 
 ```python
 import re
@@ -1993,20 +1993,20 @@ df["domaine"] = df["email"].str.extract(r"@(.+)$")[0]
 df["tel_nettoye"] = df["tel"].str.replace(r"[^0-9]", "", regex=True)   # garde uniquement les chiffres
 ```
 
-## Tables de correspondance (mapping)
+## Tables de correspondance (mapping) {#tables-de-correspondance-mapping}
 
 ```python
 mapping = {"fr": "France", "FR": "France", "fra": "France", "usa": "États-Unis"}
 df["pays"] = df["code_pays"].str.lower().map(mapping)
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-19}
 
 1. Colonne `nom` sale : espaces en trop, casse aléatoire, parfois "NOM Prénom" inversé → nettoie (strip, title) et sépare en deux colonnes avec `str.split` + `str.extract`.
 2. Colonne `prix` du type "1 234,56 €" → enlève le symbole et les espaces, remplace la virgule par un point, convertis en float.
 3. Colonne `code` du type "A-12-B" → extrais la partie numérique avec une regex.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-17}
 
 - [Pandas : working with text data](https://pandas.pydata.org/docs/user_guide/text.html)
 - [regex101.com](https://regex101.com/) pour tester tes expressions régulières
@@ -2017,9 +2017,9 @@ df["pays"] = df["code_pays"].str.lower().map(mapping)
 
 <!-- source : 06-nettoyage/05-categories.md -->
 
-# Nettoyage 5 — Encodage des catégories
+# Nettoyage 5 — Encodage des catégories {#nettoyage-5-encodage-des-categories}
 
-## Type `category`
+## Type `category` {#type-category}
 
 ```python
 df["ville"] = df["ville"].astype("category")
@@ -2034,14 +2034,14 @@ df["taille"] = df["taille"].cat.set_categories(["S", "M", "L", "XL"], ordered=Tr
 df["taille"] > "M"                  # comparaison selon l'ordre défini
 ```
 
-## Normaliser les catégories (fautes, variantes)
+## Normaliser les catégories (fautes, variantes) {#normaliser-les-categories-fautes-variantes}
 
 ```python
 df["ville"] = df["ville"].str.strip().str.title()      # "paris " -> "Paris"
 df["ville"] = df["ville"].replace({"St Denis": "Saint-Denis", "St-denis": "Saint-Denis"})
 ```
 
-## Encodage one-hot (`pd.get_dummies`)
+## Encodage one-hot (`pd.get_dummies`) {#encodage-one-hot-pd-getdummies}
 
 Transforme une colonne catégorielle en colonnes 0/1 (utile pour le machine learning, module 14) :
 
@@ -2053,19 +2053,19 @@ pd.get_dummies(df["ville"], prefix="ville", dtype=int)
 
 Options : `drop_first=True` (évite la colinéarité), `dummy_na=True` (ajoute une colonne pour les NaN).
 
-## Label encoding (catégorie → entier)
+## Label encoding (catégorie → entier) {#label-encoding-categorie-entier}
 
 ```python
 df["ville_code"] = df["ville"].cat.codes     # chaque catégorie -> entier (ordre alphabétique ou défini)
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-20}
 
 1. Colonne `couleur` avec valeurs "Rouge", "rouge ", "ROUGE", "Bleu" → normalise puis convertis en `category`.
 2. Colonne `taille` avec S/M/L/XL mélangés à des "s", " m " → nettoie, définis un ordre, vérifie que "L" > "M".
 3. Fais un one-hot encoding d'une colonne `departement` avec `get_dummies`, puis reconstitue la colonne d'origine à partir des dummies (somme des lignes = 1).
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-18}
 
 - [Pandas : categorical data](https://pandas.pydata.org/docs/user_guide/categorical.html)
 
@@ -2074,17 +2074,17 @@ df["ville_code"] = df["ville"].cat.codes     # chaque catégorie -> entier (ordr
 
 <!-- source : 07-eda/README.md -->
 
-# 07 — Analyse exploratoire des données (EDA)
+# 07 — Analyse exploratoire des données (EDA) {#07-analyse-exploratoire-des-donnees-eda}
 
 L'**Exploratory Data Analysis** consiste à comprendre un jeu de données avant de modéliser : statistiques descriptives, distributions, relations entre variables, inspection visuelle.
 
-## Leçons
+## Leçons {#lecons-4}
 
-1. [Statistiques descriptives](01-stats-descriptives.md) — moyenne, médiane, mode, variance, écart-type, corrélation, covariance.
-2. [Analyse des distributions](02-distributions.md) — histogrammes, boxplots, asymétrie.
-3. [Analyse des relations](03-relations.md) — scatterplots, matrice de corrélation, tableaux croisés.
+1. [Statistiques descriptives](#eda-1-statistiques-descriptives) — moyenne, médiane, mode, variance, écart-type, corrélation, covariance.
+2. [Analyse des distributions](#eda-2-analyse-des-distributions) — histogrammes, boxplots, asymétrie.
+3. [Analyse des relations](#eda-3-analyse-des-relations-entre-variables) — scatterplots, matrice de corrélation, tableaux croisés.
 
-## Routine EDA type
+## Routine EDA type {#routine-eda-type}
 
 ```python
 df.info()
@@ -2094,16 +2094,16 @@ df.hist()                 # aperçu de toutes les distributions
 # puis les relations : df.corr(numeric_only=True), scatterplots...
 ```
 
-Module suivant : [08 — Visualisation](../08-visualisation/README.md).
+Module suivant : [08 — Visualisation](#08-visualisation-de-donnees).
 
 
 ---
 
 <!-- source : 07-eda/01-stats-descriptives.md -->
 
-# EDA 1 — Statistiques descriptives
+# EDA 1 — Statistiques descriptives {#eda-1-statistiques-descriptives}
 
-## Mesures de tendance centrale
+## Mesures de tendance centrale {#mesures-de-tendance-centrale}
 
 ```python
 import pandas as pd
@@ -2116,7 +2116,7 @@ s.median()   # 15.0   (médiane, robuste)
 s.mode()     # 15     (valeur la plus fréquente)
 ```
 
-## Dispersion
+## Dispersion {#dispersion}
 
 ```python
 s.var()      # variance
@@ -2126,7 +2126,7 @@ s.quantile(0.25), s.quantile(0.75)   # quartiles Q1, Q3
 s.describe() # count, mean, std, min, 25%, 50%, 75%, max en un appel
 ```
 
-## Sur un DataFrame entier
+## Sur un DataFrame entier {#sur-un-dataframe-entier}
 
 ```python
 df.describe()                          # toutes les colonnes numériques
@@ -2135,7 +2135,7 @@ df.describe(include="all")
 df["colonne"].nunique()                # nombre de valeurs distinctes
 ```
 
-## Corrélation et covariance
+## Corrélation et covariance {#correlation-et-covariance}
 
 ```python
 df[["taille", "poids", "age"]].corr()          # matrice de corrélation de Pearson (entre -1 et 1)
@@ -2150,13 +2150,13 @@ Interprétation de la corrélation : proche de 1 = lien fort positif, -1 = fort 
 df.corr(numeric_only=True)     # ignore les colonnes non numériques
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-21}
 
 1. Sur un DataFrame de 100 lignes (taille, poids, âge générés aléatoirement), calcule moyenne/médiane/écart-type de chaque colonne ; compare moyenne vs médiane quand tu ajoutes un outlier.
 2. Calcule la corrélation entre deux colonnes fortement liées (ex. `x` et `x*2 + bruit`) et entre deux colonnes indépendantes ; interprète.
 3. Trouve la colonne la plus corrélée avec une colonne cible (ex. `prix`) dans un dataset.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-19}
 
 - [Pandas : describe](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html)
 - [Pandas : correlation](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.corr.html)
@@ -2166,9 +2166,9 @@ df.corr(numeric_only=True)     # ignore les colonnes non numériques
 
 <!-- source : 07-eda/02-distributions.md -->
 
-# EDA 2 — Analyse des distributions
+# EDA 2 — Analyse des distributions {#eda-2-analyse-des-distributions}
 
-## Histogramme (répartition d'une variable numérique)
+## Histogramme (répartition d'une variable numérique) {#histogramme-repartition-d-une-variable-numerique}
 
 ```python
 import matplotlib.pyplot as plt
@@ -2182,7 +2182,7 @@ plt.show()
 
 Lire un histogramme : forme (symétrique, asymétrique à droite/gauche), pics (modes), étalement, valeurs isolées.
 
-## Boxplot (boîte à moustaches)
+## Boxplot (boîte à moustaches) {#boxplot-boite-a-moustaches}
 
 ```python
 df.boxplot(column="salaire", by="ville")   # un boxplot par ville
@@ -2192,39 +2192,39 @@ plt.show()
 
 Un boxplot montre : médiane (trait central), Q1/Q3 (boîte), moustaches (généralement 1.5×IQR), points isolés = outliers potentiels.
 
-## Autres indicateurs de forme
+## Autres indicateurs de forme {#autres-indicateurs-de-forme}
 
 ```python
 df["salaire"].skew()     # asymétrie (skewness) : 0 = symétrique, > 0 = étalée à droite
 df["salaire"].kurt()     # aplatissement (kurtosis)
 ```
 
-## Distribution par catégorie
+## Distribution par catégorie {#distribution-par-categorie}
 
 ```python
 df["ville"].value_counts().plot.bar()
 df.groupby("ville")["salaire"].mean().plot.bar()
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-22}
 
 1. Génère 1000 valeurs d'une loi normale (moyenne 100, écart-type 15) et trace l'histogramme ; superpose la courbe théorique avec `scipy.stats.norm.pdf` (module 14) ou simplement compare moyenne/écart-type empiriques.
 2. Trace le boxplot d'une colonne par catégorie et identifie dans quelle catégorie la médiane est la plus haute.
 3. Compare l'histogramme d'une distribution normale et d'une distribution uniforme (`np.random.default_rng(0).uniform(...)`).
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-20}
 
 - [Pandas : plotting](https://pandas.pydata.org/docs/user_guide/visualization.html)
-- Le module suivant ([08 — Visualisation](../08-visualisation/README.md)) détaille Matplotlib, Seaborn et Plotly.
+- Le module suivant ([08 — Visualisation](#08-visualisation-de-donnees)) détaille Matplotlib, Seaborn et Plotly.
 
 
 ---
 
 <!-- source : 07-eda/03-relations.md -->
 
-# EDA 3 — Analyse des relations entre variables
+# EDA 3 — Analyse des relations entre variables {#eda-3-analyse-des-relations-entre-variables}
 
-## Nuage de points (scatterplot)
+## Nuage de points (scatterplot) {#nuage-de-points-scatterplot}
 
 ```python
 import matplotlib.pyplot as plt
@@ -2241,7 +2241,7 @@ plt.legend()
 plt.show()
 ```
 
-## Matrice de corrélation
+## Matrice de corrélation {#matrice-de-correlation}
 
 ```python
 corr = df.corr(numeric_only=True)
@@ -2252,46 +2252,46 @@ import seaborn as sns
 sns.heatmap(corr, annot=True, cmap="coolwarm", vmin=-1, vmax=1)
 ```
 
-## Deux variables catégorielles : tableau croisé
+## Deux variables catégorielles : tableau croisé {#deux-variables-categorielles-tableau-croise}
 
 ```python
 pd.crosstab(df["ville"], df["sexe"], normalize="index")   # proportions en ligne
 pd.crosstab(df["ville"], df["sexe"], values=df["salaire"], aggfunc="mean")
 ```
 
-## Une catégorielle, une numérique
+## Une catégorielle, une numérique {#une-categorielle-une-numerique}
 
 ```python
 df.groupby("ville")["salaire"].agg(["mean", "median", "std"])
 df.boxplot(column="salaire", by="ville")
 ```
 
-## Matrice de nuages de points (pairplot) avec seaborn
+## Matrice de nuages de points (pairplot) avec seaborn {#matrice-de-nuages-de-points-pairplot-avec-seaborn}
 
 ```python
 import seaborn as sns
 sns.pairplot(df[["taille", "poids", "age", "sexe"]], hue="sexe")
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-23}
 
 1. Sur un dataset avec plusieurs colonnes numériques, trouve la paire de variables la plus corrélée (|corr| max) et trace leur scatterplot.
 2. Trace la heatmap de corrélation et identifie les corrélations fortes (> 0.7 ou < -0.7).
 3. Compare le salaire moyen par catégorie avec un barplot et un boxplot ; quelle visualisation te parle le plus ?
 4. Fais un `crosstab` normalisé entre deux colonnes catégorielles et interprète.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-21}
 
 - [Seaborn : relational plots](https://seaborn.pydata.org/tutorial/relational.html)
 
-Module suivant : [08 — Visualisation](../08-visualisation/README.md).
+Module suivant : [08 — Visualisation](#08-visualisation-de-donnees).
 
 
 ---
 
 <!-- source : 08-visualisation/README.md -->
 
-# 08 — Visualisation de données
+# 08 — Visualisation de données {#08-visualisation-de-donnees}
 
 Trois bibliothèques complémentaires :
 
@@ -2305,24 +2305,24 @@ Trois bibliothèques complémentaires :
 pip install matplotlib seaborn plotly
 ```
 
-## Leçons
+## Leçons {#lecons-5}
 
-1. [Matplotlib](01-matplotlib.md) — figures, subplots, personnalisation, sauvegarde.
-2. [Seaborn](02-seaborn.md) — distribution plots, categorical plots, heatmaps, regression plots.
-3. [Plotly](03-plotly.md) — graphiques interactifs (Express).
+1. [Matplotlib](#visualisation-1-matplotlib) — figures, subplots, personnalisation, sauvegarde.
+2. [Seaborn](#visualisation-2-seaborn) — distribution plots, categorical plots, heatmaps, regression plots.
+3. [Plotly](#visualisation-3-plotly-interactif) — graphiques interactifs (Express).
 
-## Règle d'or
+## Règle d'or {#regle-d-or}
 
 Un bon graphique répond à **une question**. Titre explicite, axes nommés avec unités, légende si besoin, et sauvegarde en PNG/PDF/SVG (`fig.savefig(...)`).
 
-Module suivant : [09 — Web scraping et API](../09-web/README.md).
+Module suivant : [09 — Web scraping et API](#09-recuperer-des-donnees-sur-le-web-api-et-scraping).
 
 
 ---
 
 <!-- source : 08-visualisation/01-matplotlib.md -->
 
-# Visualisation 1 — Matplotlib
+# Visualisation 1 — Matplotlib {#visualisation-1-matplotlib}
 
 ```bash
 pip install matplotlib
@@ -2332,7 +2332,7 @@ pip install matplotlib
 import matplotlib.pyplot as plt
 ```
 
-## Premier graphique
+## Premier graphique {#premier-graphique}
 
 ```python
 import matplotlib.pyplot as plt
@@ -2348,7 +2348,7 @@ plt.grid(True)
 plt.show()
 ```
 
-## Types de graphiques de base
+## Types de graphiques de base {#types-de-graphiques-de-base}
 
 ```python
 plt.plot(x, y)              # courbe
@@ -2360,7 +2360,7 @@ plt.boxplot([serie1, serie2])       # boxplots
 plt.pie(parts, labels=categories, autopct="%1.1f%%")  # camembert (à utiliser avec parcimonie)
 ```
 
-## Figure et subplots (plusieurs graphiques côte à côte)
+## Figure et subplots (plusieurs graphiques côte à côte) {#figure-et-subplots-plusieurs-graphiques-cote-a-cote}
 
 ```python
 fig, axes = plt.subplots(2, 2, figsize=(10, 8))   # grille 2x2
@@ -2385,7 +2385,7 @@ ax.set_ylabel("Y (unité)")
 ax.set_title("Titre")
 ```
 
-## Personnaliser
+## Personnaliser {#personnaliser}
 
 ```python
 plt.plot(x, y, color="#1f77b4", linestyle="--", marker="s", markersize=8, label="Série 1")
@@ -2397,7 +2397,7 @@ plt.xticks([1, 2, 3, 4, 5], ["un", "deux", "trois", "quatre", "cinq"])
 plt.style.use("seaborn-v0_8")   # thème parmi plt.style.available
 ```
 
-## Sauvegarder une figure
+## Sauvegarder une figure {#sauvegarder-une-figure}
 
 ```python
 fig.savefig("data/graphique.png", dpi=150, bbox_inches="tight")
@@ -2406,7 +2406,7 @@ fig.savefig("data/graphique.svg")
 plt.close(fig)   # libère la mémoire (important dans les boucles)
 ```
 
-## Travailler avec pandas
+## Travailler avec pandas {#travailler-avec-pandas}
 
 ```python
 df["age"].hist(bins=20)                       # raccourci pandas (appelle matplotlib)
@@ -2414,13 +2414,13 @@ df.plot(x="date", y="ca", kind="line")       # df.plot(kind=...) : line, bar, ba
 df.plot.scatter(x="taille", y="poids", c="age", colormap="viridis")
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-24}
 
 1. Trace la courbe de `sin(x)` pour x de 0 à 2π (utilise `numpy.linspace` et `numpy.sin`), avec titre et labels.
 2. Crée une figure 1×3 : courbe, barres, histogramme sur des données aléatoires (graine fixée).
 3. Personnalise un scatterplot : couleur selon une catégorie, taille des points selon une valeur, légende, et sauvegarde en PNG à 200 dpi.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-22}
 
 - [Matplotlib : tutoriel officiel](https://matplotlib.org/stable/tutorials/index.html)
 - [Galerie d'exemples](https://matplotlib.org/stable/gallery/index.html)
@@ -2430,7 +2430,7 @@ df.plot.scatter(x="taille", y="poids", c="age", colormap="viridis")
 
 <!-- source : 08-visualisation/02-seaborn.md -->
 
-# Visualisation 2 — Seaborn
+# Visualisation 2 — Seaborn {#visualisation-2-seaborn}
 
 ```bash
 pip install seaborn
@@ -2445,7 +2445,7 @@ import matplotlib.pyplot as plt
 sns.set_theme()   # applique le thème par défaut (peut aussi être appelé dans chaque script)
 ```
 
-## Charger un jeu de données d'exemple
+## Charger un jeu de données d'exemple {#charger-un-jeu-de-donnees-d-exemple}
 
 ```python
 tips = sns.load_dataset("tips")      # pourboires au restaurant (chargé depuis le dépôt seaborn)
@@ -2454,7 +2454,7 @@ iris = sns.load_dataset("iris")
 
 > `load_dataset` télécharge le fichier au premier appel puis le met en cache. Pour travailler hors ligne ensuite, sauvegarde-le : `tips.to_csv("data/tips.csv", index=False)`.
 
-## Distribution plots
+## Distribution plots {#distribution-plots}
 
 ```python
 sns.histplot(data=tips, x="total_bill", bins=20, kde=True)   # histogramme + densité
@@ -2464,7 +2464,7 @@ sns.violinplot(data=tips, x="day", y="total_bill")            # violon (distribu
 sns.stripplot(data=tips, x="day", y="total_bill", alpha=0.5)   # points individuels
 ```
 
-## Categorical plots
+## Categorical plots {#categorical-plots}
 
 ```python
 sns.barplot(data=tips, x="day", y="total_bill", estimator="mean")     # moyenne par défaut, barre = IC 95%
@@ -2472,7 +2472,7 @@ sns.countplot(data=tips, x="day")                                     # effectif
 sns.catplot(data=tips, x="day", y="total_bill", hue="sex", kind="bar") # kind: bar, box, violin, strip...
 ```
 
-## Heatmaps
+## Heatmaps {#heatmaps}
 
 ```python
 corr = tips.select_dtypes("number").corr()
@@ -2480,20 +2480,20 @@ sns.heatmap(corr, annot=True, cmap="coolwarm", center=0, vmin=-1, vmax=1)
 plt.show()
 ```
 
-## Regression plots
+## Regression plots {#regression-plots}
 
 ```python
 sns.regplot(data=tips, x="total_bill", y="tip")                    # nuage + droite de régression
 sns.lmplot(data=tips, x="total_bill", y="tip", hue="smoker", col="time")  # facettes
 ```
 
-## Pairplot (matrice de relations)
+## Pairplot (matrice de relations) {#pairplot-matrice-de-relations}
 
 ```python
 sns.pairplot(iris, hue="species")
 ```
 
-## Personnaliser et sauvegarder
+## Personnaliser et sauvegarder {#personnaliser-et-sauvegarder}
 
 ```python
 sns.set_style("whitegrid")          # darkgrid, white, whitegrid, dark, ticks
@@ -2503,14 +2503,14 @@ g = sns.scatterplot(data=tips, x="total_bill", y="tip")
 g.figure.savefig("data/tip_vs_bill.png", dpi=150, bbox_inches="tight")
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-25}
 
 1. Sur `tips` : distribution du `total_bill` par `day` (boxplot + violin côte à côte via `catplot`), sauvegarde en PNG.
 2. Heatmap de corrélation des variables numériques de `iris`, annotée.
 3. `regplot` de `tip` vs `total_bill`, coloré par `smoker` ; que remarques-tu ?
 4. `pairplot` de `iris` ; quelles paires de variables semblent corrélées ?
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-23}
 
 - [Seaborn : tutoriel officiel](https://seaborn.pydata.org/tutorial.html)
 - [Galerie Seaborn](https://seaborn.pydata.org/examples/index.html)
@@ -2520,7 +2520,7 @@ g.figure.savefig("data/tip_vs_bill.png", dpi=150, bbox_inches="tight")
 
 <!-- source : 08-visualisation/03-plotly.md -->
 
-# Visualisation 3 — Plotly (interactif)
+# Visualisation 3 — Plotly (interactif) {#visualisation-3-plotly-interactif}
 
 ```bash
 pip install plotly
@@ -2532,7 +2532,7 @@ Plotly produit des graphiques **interactifs** (zoom, survol avec valeurs, légen
 import plotly.express as px
 ```
 
-## Plotly Express : la façon rapide
+## Plotly Express : la façon rapide {#plotly-express-la-facon-rapide}
 
 ```python
 import plotly.express as px
@@ -2544,7 +2544,7 @@ fig.show()                   # ouvre dans le navigateur
 fig.write_html("data/iris.html")   # sauvegarde autonome (ouvrable sans serveur)
 ```
 
-## Autres types rapides
+## Autres types rapides {#autres-types-rapides}
 
 ```python
 px.line(df, x="date", y="valeur")                 # courbe temporelle
@@ -2557,7 +2557,7 @@ px.imshow(corr_matrix, text_auto=True, color_continuous_scale="RdBu_r")  # heatm
 px.choropleth(...)    # cartes (module 14, géospatial)
 ```
 
-## Personnaliser
+## Personnaliser {#personnaliser-1}
 
 ```python
 fig.update_layout(
@@ -2570,32 +2570,32 @@ fig.update_layout(
 fig.update_traces(marker=dict(size=8, opacity=0.7))
 ```
 
-## Export
+## Export {#export}
 
 ```python
 fig.write_html("data/rapport.html")       # HTML autonome
 fig.write_image("data/fig.png")           # image statique (nécessite kaleido : pip install kaleido)
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-26}
 
 1. Scatter interactif sur `px.data.gapminder()` : PIB par habitant vs espérance de vie, couleur par continent, taille par population, année en animation (`animation_frame="year"`).
 2. Boxplot interactif d'une colonne par catégorie sur ton propre DataFrame ; sauvegarde en HTML.
 3. Heatmap de corrélation interactive avec `px.imshow`.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-24}
 
 - [Plotly Express](https://plotly.com/python/plotly-express/)
 - [Plotly : graphiques fondamentaux](https://plotly.com/python/)
 
-Module suivant : [09 — Web scraping et API](../09-web/README.md).
+Module suivant : [09 — Web scraping et API](#09-recuperer-des-donnees-sur-le-web-api-et-scraping).
 
 
 ---
 
 <!-- source : 09-web/README.md -->
 
-# 09 — Récupérer des données sur le web (API et scraping)
+# 09 — Récupérer des données sur le web (API et scraping) {#09-recuperer-des-donnees-sur-le-web-api-et-scraping}
 
 Deux approches complémentaires :
 
@@ -2609,26 +2609,26 @@ pip install requests beautifulsoup4
 
 ⚠️ Bonnes pratiques : respecte le `robots.txt` du site, les conditions d'utilisation, espace tes requêtes (`time.sleep(1)` entre deux appels), et n'extraie jamais de données personnelles.
 
-## Leçons
+## Leçons {#lecons-6}
 
-1. [Appeler des API avec `requests`](01-apis-requests.md)
-2. [Scraper du HTML avec `BeautifulSoup`](02-beautifulsoup.md)
-3. [Scrapy en aperçu](03-scrapy-apercu.md)
+1. [Appeler des API avec `requests`](#web-1-appeler-des-api-avec-requests)
+2. [Scraper du HTML avec `BeautifulSoup`](#web-2-scraper-du-html-avec-beautifulsoup)
+3. [Scrapy en aperçu](#web-3-scrapy-apercu)
 
-Module suivant : [10 — SQL](../10-sql/README.md).
+Module suivant : [10 — SQL](#10-sql-avec-python).
 
 
 ---
 
 <!-- source : 09-web/01-apis-requests.md -->
 
-# Web 1 — Appeler des API avec `requests`
+# Web 1 — Appeler des API avec `requests` {#web-1-appeler-des-api-avec-requests}
 
 ```bash
 pip install requests
 ```
 
-## GET : récupérer des données
+## GET : récupérer des données {#get-recuperer-des-donnees}
 
 ```python
 import requests
@@ -2646,7 +2646,7 @@ print(data["daily"]["time"])
 print(data["daily"]["temperature_2m_max"])
 ```
 
-## Gérer les erreurs
+## Gérer les erreurs {#gerer-les-erreurs}
 
 ```python
 try:
@@ -2660,7 +2660,7 @@ except requests.exceptions.Timeout:
     print("La requête a expiré")
 ```
 
-## API publiques sans clé (pour t'entraîner)
+## API publiques sans clé (pour t'entraîner) {#api-publiques-sans-cle-pour-t-entrainer}
 
 | API | Données | Exemple d'URL |
 |---|---|---|
@@ -2670,7 +2670,7 @@ except requests.exceptions.Timeout:
 | PokeAPI | Pokémon | `https://pokeapi.co/api/v2/pokemon/ditto` |
 | Open Library | livres | `https://openlibrary.org/search.json?q=python` |
 
-## POST : envoyer des données
+## POST : envoyer des données {#post-envoyer-des-donnees}
 
 ```python
 r = requests.post("https://httpbin.org/post",
@@ -2679,7 +2679,7 @@ r = requests.post("https://httpbin.org/post",
 print(r.json())
 ```
 
-## En-têtes et authentification
+## En-têtes et authentification {#en-tetes-et-authentification}
 
 ```python
 headers = {"User-Agent": "mon-projet-python/1.0", "Accept": "application/json"}
@@ -2688,7 +2688,7 @@ r = requests.get(url, headers=headers)
 
 Certaines API exigent une clé : `params={"appid": "TA_CLE"}` ou en-tête `Authorization`. Ne committe **jamais** ta clé : utilise une variable d'environnement (`os.environ["MA_CLE"]` + fichier `.env` non versionné).
 
-## Transformer la réponse en DataFrame
+## Transformer la réponse en DataFrame {#transformer-la-reponse-en-dataframe}
 
 ```python
 import pandas as pd
@@ -2702,14 +2702,14 @@ df["time"] = pd.to_datetime(df["time"])
 print(df.head())
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-27}
 
 1. Récupère la météo actuelle de 3 villes avec Open-Meteo et affiche température + vent.
 2. Interroge REST Countries pour obtenir capitale, population et superficie de la France ; mets-les dans un DataFrame.
 3. Récupère les 10 premiers posts de JSONPlaceholder, eksttrais `userId` et `title`, compte les posts par utilisateur.
 4. Ajoute un `time.sleep(1)` entre les appels d'une boucle de 5 requêtes (bonne pratique).
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-25}
 
 - [Documentation requests](https://requests.readthedocs.io/)
 - [Open-Meteo : documentation API](https://open-meteo.com/en/docs)
@@ -2719,7 +2719,7 @@ print(df.head())
 
 <!-- source : 09-web/02-beautifulsoup.md -->
 
-# Web 2 — Scraper du HTML avec BeautifulSoup
+# Web 2 — Scraper du HTML avec BeautifulSoup {#web-2-scraper-du-html-avec-beautifulsoup}
 
 ```bash
 pip install beautifulsoup4
@@ -2727,7 +2727,7 @@ pip install beautifulsoup4
 
 Quand il n'y a pas d'API, on parse le HTML de la page.
 
-## Récupérer et parser une page
+## Récupérer et parser une page {#recuperer-et-parser-une-page}
 
 ```python
 import requests
@@ -2741,7 +2741,7 @@ soup.title.text          # titre de la page
 soup.find("h1").text     # premier <h1>
 ```
 
-## Sélectionner des éléments (CSS)
+## Sélectionner des éléments (CSS) {#selectionner-des-elements-css}
 
 ```python
 # par balise
@@ -2755,7 +2755,7 @@ soup.select("div.price_color")
 soup.select("p.star-rating.Three")       # classe multiple
 ```
 
-## Extraire le texte et les attributs
+## Extraire le texte et les attributs {#extraire-le-texte-et-les-attributs}
 
 ```python
 livre = soup.select_one("article.product_pod")
@@ -2765,7 +2765,7 @@ disponibilite = livre.select_one("p.instock.availability").text.strip()
 lien = livre.h3.a["href"]                 # URL relative
 ```
 
-## Boucler sur tous les éléments
+## Boucler sur tous les éléments {#boucler-sur-tous-les-elements}
 
 ```python
 livres = []
@@ -2783,7 +2783,7 @@ print(df.head())
 print(df["note"].value_counts())
 ```
 
-## Pagination
+## Pagination {#pagination}
 
 ```python
 page = 1
@@ -2793,14 +2793,14 @@ while page <= 3:
     page += 1
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-28}
 
 1. Scrape la page d'accueil de books.toscrape.com : récupère titre, prix et note des 20 livres, mets-les dans un DataFrame.
 2. Convertis les notes ("One" à "Five") en entiers (mapping) et calcule le prix moyen par note.
 3. Scrape 3 pages (pagination) et sauvegarde le résultat en CSV.
 4. Récupère la liste des pays depuis `https://restcountries.com/v3.1/all?fields=name,capital,population` (API JSON) — puis fais la même chose en scrapant une page HTML simple de ton choix.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-26}
 
 - [Documentation BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - Inspecte le HTML d'une page : clic droit → « Inspecter » dans ton navigateur (outil développeur, onglet Éléments).
@@ -2810,7 +2810,7 @@ while page <= 3:
 
 <!-- source : 09-web/03-scrapy-apercu.md -->
 
-# Web 3 — Scrapy (aperçu)
+# Web 3 — Scrapy (aperçu) {#web-3-scrapy-apercu}
 
 ```bash
 pip install scrapy
@@ -2818,13 +2818,13 @@ pip install scrapy
 
 **Scrapy** est un framework complet pour le scraping à grande échelle : requêtes asynchrones rapides, gestion automatique des erreurs, pipelines de nettoyage, export CSV/JSON, et `scrapy shell` pour tester ses sélecteurs.
 
-## Quand passer de BeautifulSoup à Scrapy ?
+## Quand passer de BeautifulSoup à Scrapy ? {#quand-passer-de-beautifulsoup-a-scrapy}
 
 - Des **centaines/milliers de pages** à crawler.
 - Besoin de **vitesse** (requêtes parallèles).
 - Projet structuré avec plusieurs « spiders » (robots d'exploration) et pipelines de traitement.
 
-## Structure d'un projet Scrapy
+## Structure d'un projet Scrapy {#structure-d-un-projet-scrapy}
 
 ```bash
 scrapy startproject monsite
@@ -2855,30 +2855,30 @@ class LivresSpider(scrapy.Spider):
 
 Lancement : `scrapy crawl livres -O livres.csv`
 
-## `scrapy shell` : tester ses sélecteurs
+## `scrapy shell` : tester ses sélecteurs {#scrapy-shell-tester-ses-selecteurs}
 
 ```bash
 scrapy shell "https://books.toscrape.com/"
 >>> response.css("article.product_pod h3 a::attr(title)").getall()[:3]
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-29}
 
 1. Installe scrapy, crée un projet, et réécris le scraping de books.toscrape.com en spider avec pagination sur 3 pages ; exporte en CSV.
 2. Utilise `scrapy shell` pour trouver le sélecteur CSS qui isole les prix.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-27}
 
 - [Documentation Scrapy](https://docs.scrapy.org/)
 
-Module suivant : [10 — SQL](../10-sql/README.md).
+Module suivant : [10 — SQL](#10-sql-avec-python).
 
 
 ---
 
 <!-- source : 10-sql/README.md -->
 
-# 10 — SQL avec Python
+# 10 — SQL avec Python {#10-sql-avec-python}
 
 SQL reste **incontournable** pour interroger des bases de données. En Python, trois approches :
 
@@ -2892,22 +2892,22 @@ SQL reste **incontournable** pour interroger des bases de données. En Python, t
 pip install sqlalchemy duckdb
 ```
 
-## Leçons
+## Leçons {#lecons-7}
 
-1. [Fondamentaux SQL](01-sql-fondamentaux.md) — SELECT, WHERE, ORDER BY, GROUP BY, JOIN, agrégations.
-2. [sqlite3 et SQLAlchemy](02-sqlite3-sqlalchemy.md) — créer une base, insérer, interroger depuis Python, `pd.read_sql`.
-3. [DuckDB](03-duckdb.md) — requêter des CSV/Parquet directement en SQL.
+1. [Fondamentaux SQL](#sql-1-fondamentaux) — SELECT, WHERE, ORDER BY, GROUP BY, JOIN, agrégations.
+2. [sqlite3 et SQLAlchemy](#sql-2-sqlite3-stdlib-et-sqlalchemy) — créer une base, insérer, interroger depuis Python, `pd.read_sql`.
+3. [DuckDB](#sql-3-duckdb-du-sql-sur-des-fichiers) — requêter des CSV/Parquet directement en SQL.
 
 Ressource : la [roadmap SQL de roadmap.sh](https://roadmap.sh/sql) pour aller plus loin.
 
-Module suivant : [11 — Polars](../11-polars/README.md).
+Module suivant : [11 — Polars](#11-polars-l-alternative-rapide-a-pandas).
 
 
 ---
 
 <!-- source : 10-sql/01-sql-fondamentaux.md -->
 
-# SQL 1 — Fondamentaux
+# SQL 1 — Fondamentaux {#sql-1-fondamentaux}
 
 SQL (Structured Query Language) interroge des bases relationnelles. Syntaxe essentielle :
 
@@ -2921,7 +2921,7 @@ ORDER BY nb DESC
 LIMIT 10;
 ```
 
-## Les commandes essentielles
+## Les commandes essentielles {#les-commandes-essentielles}
 
 | Commande | Rôle | Exemple |
 |---|---|---|
@@ -2935,7 +2935,7 @@ LIMIT 10;
 | `HAVING` | filtrer APRÈS groupement | `HAVING COUNT(*) > 5` (WHERE filtre avant) |
 | `JOIN` | joindre des tables | `JOIN commandes ON clients.id = commandes.id_client` |
 
-## Agrégations
+## Agrégations {#agregations-1}
 
 ```sql
 SELECT ville, COUNT(*) AS nb, AVG(salaire) AS salaire_moyen,
@@ -2946,7 +2946,7 @@ GROUP BY ville;
 
 Fonctions : `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`.
 
-## Jointures
+## Jointures {#jointures}
 
 ```sql
 -- INNER JOIN : uniquement les correspondances
@@ -2960,7 +2960,7 @@ FROM clients c
 LEFT JOIN commandes co ON c.id = co.id_client;
 ```
 
-## Autres opérations utiles
+## Autres opérations utiles {#autres-operations-utiles}
 
 ```sql
 INSERT INTO clients (nom, ville) VALUES ('Alice', 'Paris');
@@ -2980,7 +2980,7 @@ SELECT * FROM ventes WHERE date >= '2024-01-01';
 SELECT strftime('%Y-%m', date) AS mois, SUM(montant) FROM ventes GROUP BY mois;  -- SQLite
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-30}
 
 Pratique sur [SQLite Online](https://sqliteonline.com/) ou avec le module suivant (`sqlite3`) :
 
@@ -2989,7 +2989,7 @@ Pratique sur [SQLite Online](https://sqliteonline.com/) ou avec le module suivan
 3. Calcule le prix moyen et le nombre de produits par catégorie (GROUP BY + HAVING pour ne garder que les catégories avec plus de 2 produits).
 4. Crée une table `ventes` et fais une jointure avec `produits` pour obtenir le nom du produit de chaque vente.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-28}
 
 - [SQLite : tutoriel SQL](https://www.sqlitetutorial.net/)
 - [W3Schools SQL](https://www.w3schools.com/sql/)
@@ -2999,9 +2999,9 @@ Pratique sur [SQLite Online](https://sqliteonline.com/) ou avec le module suivan
 
 <!-- source : 10-sql/02-sqlite3-sqlalchemy.md -->
 
-# SQL 2 — sqlite3 (stdlib) et SQLAlchemy
+# SQL 2 — sqlite3 (stdlib) et SQLAlchemy {#sql-2-sqlite3-stdlib-et-sqlalchemy}
 
-## sqlite3 : base de données embarquée (aucun serveur)
+## sqlite3 : base de données embarquée (aucun serveur) {#sqlite3-base-de-donnees-embarquee-aucun-serveur}
 
 ```python
 import sqlite3
@@ -3041,7 +3041,7 @@ con.close()
 
 > Les `?` sont des **paramètres** : ils protègent des injections SQL (ne jamais construire une requête avec des f-strings sur des entrées utilisateur).
 
-## SQLAlchemy : l'ORM professionnel
+## SQLAlchemy : l'ORM professionnel {#sqlalchemy-l-orm-professionnel}
 
 ```bash
 pip install sqlalchemy
@@ -3063,13 +3063,13 @@ df = pd.read_sql("SELECT * FROM ventes", engine)
 
 SQLAlchemy sert aussi d'ORM (définir les tables comme des classes Python) pour les vraies applications.
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-31}
 
 1. Crée une base `bibliotheque.db` avec tables `livres` et `auteurs`, insère des données, fais une jointure pour lister les livres avec le nom de l'auteur.
 2. Charge un CSV avec pandas, écris-le dans une table sqlite avec `to_sql`, puis relis-le uniquement avec `pd.read_sql_query` et un `GROUP BY`.
 3. Refais l'exercice 2 avec SQLAlchemy (`create_engine` + `text`).
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-29}
 
 - [sqlite3 — doc Python](https://docs.python.org/fr/3/library/sqlite3.html)
 - [SQLAlchemy](https://docs.sqlalchemy.org/)
@@ -3079,7 +3079,7 @@ SQLAlchemy sert aussi d'ORM (définir les tables comme des classes Python) pour 
 
 <!-- source : 10-sql/03-duckdb.md -->
 
-# SQL 3 — DuckDB : du SQL sur des fichiers
+# SQL 3 — DuckDB : du SQL sur des fichiers {#sql-3-duckdb-du-sql-sur-des-fichiers}
 
 [DuckDB](https://duckdb.org/) est une base de données **analytique embarquée** : on exécute du SQL directement sur des fichiers CSV/Parquet/JSON, sans serveur ni import en mémoire complet. Idéal pour les fichiers trop gros pour Excel mais gérables sur disque.
 
@@ -3087,7 +3087,7 @@ SQLAlchemy sert aussi d'ORM (définir les tables comme des classes Python) pour 
 pip install duckdb
 ```
 
-## Requêter un CSV directement
+## Requêter un CSV directement {#requeter-un-csv-directement}
 
 ```python
 import duckdb
@@ -3102,7 +3102,7 @@ resultat = duckdb.sql("""
 print(resultat)
 ```
 
-## Depuis pandas
+## Depuis pandas {#depuis-pandas}
 
 ```python
 import duckdb
@@ -3114,7 +3114,7 @@ df = pd.read_csv("data/ventes.csv")
 duckdb.sql("SELECT produit, SUM(quantite * prix) AS ca FROM df GROUP BY produit ORDER BY ca DESC LIMIT 5").df()
 ```
 
-## Lire plusieurs formats
+## Lire plusieurs formats {#lire-plusieurs-formats}
 
 ```python
 duckdb.sql("SELECT * FROM 'data/ventes.parquet' LIMIT 5").df()
@@ -3129,7 +3129,7 @@ duckdb.sql("""
 """).df()
 ```
 
-## Créer une vraie base DuckDB
+## Créer une vraie base DuckDB {#creer-une-vraie-base-duckdb}
 
 ```python
 con = duckdb.connect("data/analytics.duckdb")
@@ -3138,7 +3138,7 @@ con.execute("INSERT INTO ventes VALUES (...)").df()
 con.close()
 ```
 
-## Pourquoi DuckDB ?
+## Pourquoi DuckDB ? {#pourquoi-duckdb}
 
 | Critère | pandas | DuckDB |
 |---|---|---|
@@ -3146,25 +3146,25 @@ con.close()
 | Requête SQL complexe (joins, agrégations) | verbeux | naturel |
 | Écrire le résultat | `to_parquet` | `COPY ... TO 'sortie.parquet'` |
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-32}
 
 1. Sur un CSV de ventes que tu génères (1M de lignes avec numpy), calcule avec DuckDB le CA par mois et par catégorie ; compare le temps d'exécution avec pandas (`%time` en notebook ou `time.perf_counter()`).
 2. Jointure entre un CSV clients et un Parquet commandes directement en SQL DuckDB.
 3. Exporte le résultat d'une requête en Parquet avec `COPY (SELECT ...) TO 'data/rapport.parquet' (FORMAT PARQUET)`.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-30}
 
 - [DuckDB : documentation](https://duckdb.org/docs/)
 - [DuckDB + pandas](https://duckdb.org/docs/guides/python/pandas.html)
 
-Module suivant : [11 — Polars](../11-polars/README.md).
+Module suivant : [11 — Polars](#11-polars-l-alternative-rapide-a-pandas).
 
 
 ---
 
 <!-- source : 11-polars/README.md -->
 
-# 11 — Polars : l'alternative rapide à pandas
+# 11 — Polars : l'alternative rapide à pandas {#11-polars-l-alternative-rapide-a-pandas}
 
 [Polars](https://pola-rs.github.io/polars-book/) est une bibliothèque DataFrame écrite en Rust, pensée pour la **performance** sur les gros volumes (lecture par morceaux, exécution parallèle, requêtes optimisées « lazy »).
 
@@ -3176,7 +3176,7 @@ pip install polars
 import polars as pl
 ```
 
-## DataFrame et lecture
+## DataFrame et lecture {#dataframe-et-lecture}
 
 ```python
 df = pl.read_csv("data/ventes.csv")
@@ -3188,7 +3188,7 @@ df.schema         # types des colonnes
 df.describe()
 ```
 
-## Expressions (le cœur de Polars)
+## Expressions (le cœur de Polars) {#expressions-le-c-ur-de-polars}
 
 Polars exprime les calculs avec des **expressions** (`pl.col(...)`), évaluées en parallèle :
 
@@ -3209,7 +3209,7 @@ df.group_by("ville").agg(
 ).sort("prix_moyen", descending=True)
 ```
 
-## Lazy : optimiser avant d'exécuter
+## Lazy : optimiser avant d'exécuter {#lazy-optimiser-avant-d-executer}
 
 ```python
 lazy = (
@@ -3224,7 +3224,7 @@ resultat = lazy.collect()     # exécute la requête optimisée
 
 `scan_csv` + `collect` laissent Polars optimiser (filtrer avant de lire les colonnes inutiles, etc.) : c'est ce qui le rend rapide sur les gros fichiers.
 
-## Conversion pandas ↔ Polars
+## Conversion pandas ↔ Polars {#conversion-pandas-polars}
 
 ```python
 import pandas as pd
@@ -3233,7 +3233,7 @@ df_pl = pl.from_pandas(df_pd)
 df_pd = df_pl.to_pandas()
 ```
 
-## Polars vs pandas : quand choisir ?
+## Polars vs pandas : quand choisir ? {#polars-vs-pandas-quand-choisir}
 
 | pandas | Polars |
 |---|---|
@@ -3241,47 +3241,47 @@ df_pd = df_pl.to_pandas()
 | API très connue | syntaxe « expressions » à apprendre |
 | manipulación fine ligne par ligne | traitements vectorisés parallèles |
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-33}
 
 1. Génère un CSV de 1M de lignes (numpy), lis-le avec `pl.scan_csv`, filtre et agrège en lazy, compare le temps avec `pd.read_csv` + filtre pandas.
 2. Refais l'analyse du module 05 (groupby + tri) en Polars et compare la lisibilité.
 3. Convertis un DataFrame pandas en Polars, fais un `group_by().agg()`, reconvertis en pandas.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-31}
 
 - [Polars : user guide](https://docs.pola.rs/)
 - [Polars vs pandas](https://docs.pola.rs/user-guide/migration/pandas/)
 
-Module suivant : [12 — Dashboards](../12-dashboards/README.md).
+Module suivant : [12 — Dashboards](#12-dashboards-et-outils-bi).
 
 
 ---
 
 <!-- source : 12-dashboards/README.md -->
 
-# 12 — Dashboards et outils BI
+# 12 — Dashboards et outils BI {#12-dashboards-et-outils-bi}
 
-## Leçons
+## Leçons {#lecons-8}
 
-1. [Streamlit : un dashboard en pur Python](01-streamlit.md) — recommandé pour démarrer.
-2. [Dash (Plotly) — aperçu](02-dash.md).
-3. [Power BI / Tableau — aperçu](03-outils-bi.md) : outils BI professionnels (hors Python, à connaître).
+1. [Streamlit : un dashboard en pur Python](#dashboards-1-streamlit) — recommandé pour démarrer.
+2. [Dash (Plotly) — aperçu](#dashboards-2-dash-plotly-apercu).
+3. [Power BI / Tableau — aperçu](#dashboards-3-power-bi-tableau-et-outils-bi-apercu) : outils BI professionnels (hors Python, à connaître).
 
-## Streamlit en deux mots
+## Streamlit en deux mots {#streamlit-en-deux-mots}
 
 ```bash
 pip install streamlit
 streamlit run app.py     # ouvre un dashboard dans le navigateur, mis à jour à chaque modification
 ```
 
-Module suivant : [13 — Big data et pipelines](../13-big-data-pipelines/README.md).
+Module suivant : [13 — Big data et pipelines](#13-big-data-et-pipelines-de-donnees-apercu).
 
 
 ---
 
 <!-- source : 12-dashboards/01-streamlit.md -->
 
-# Dashboards 1 — Streamlit
+# Dashboards 1 — Streamlit {#dashboards-1-streamlit}
 
 [Streamlit](https://streamlit.io/) transforme un script Python en application web interactive, sans HTML/CSS/JS.
 
@@ -3289,7 +3289,7 @@ Module suivant : [13 — Big data et pipelines](../13-big-data-pipelines/README.
 pip install streamlit
 ```
 
-## Premier app (`app.py`)
+## Premier app (`app.py`) {#premier-app-app-py}
 
 ```python
 import streamlit as st
@@ -3316,7 +3316,7 @@ st.plotly_chart(fig)
 
 Lancement : `streamlit run app.py` → l'app s'ouvre sur `http://localhost:8501` et se **recharge automatiquement** à chaque sauvegarde du fichier.
 
-## Composants utiles
+## Composants utiles {#composants-utiles}
 
 ```python
 st.sidebar.title("Filtres")                       # barre latérale
@@ -3335,7 +3335,7 @@ if upload:
     df_upload = pd.read_csv(upload)
 ```
 
-## Caching (éviter de tout recalculer)
+## Caching (éviter de tout recalculer) {#caching-eviter-de-tout-recalculer}
 
 ```python
 @st.cache_data
@@ -3345,13 +3345,13 @@ def charger_donnees(chemin):
 df = charger_donnees("data/ventes.csv")
 ```
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-34}
 
 1. Dashboard météo : récupère 14 jours de prévisions Open-Meteo pour une ville choisie dans un `selectbox`, affiche métriques (T° max/min moyenne) + graphique Plotly des températures.
 2. Dashboard sur ton propre CSV : filtres par catégorie/date, tableau filtré, 2 graphiques, métriques clés en haut.
 3. Ajoute un `file_uploader` pour charger n'importe quel CSV et afficher ses stats automatiquement.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-32}
 
 - [Documentation Streamlit](https://docs.streamlit.io/)
 - Déploiement gratuit : Streamlit Community Cloud (à connecter à ton compte GitHub).
@@ -3361,7 +3361,7 @@ df = charger_donnees("data/ventes.csv")
 
 <!-- source : 12-dashboards/02-dash.md -->
 
-# Dashboards 2 — Dash (Plotly), aperçu
+# Dashboards 2 — Dash (Plotly), aperçu {#dashboards-2-dash-plotly-apercu}
 
 ```bash
 pip install dash
@@ -3394,7 +3394,7 @@ if __name__ == "__main__":
     app.run(debug=True)     # http://localhost:8050
 ```
 
-## Streamlit vs Dash
+## Streamlit vs Dash {#streamlit-vs-dash}
 
 | Streamlit | Dash |
 |---|---|
@@ -3402,11 +3402,11 @@ if __name__ == "__main__":
 | idéal pour prototyper / partager vite | idéal pour des dashboards complexes et personnalisés |
 | composants prêts à l'emploi | contrôle total du HTML/CSS |
 
-## Exercice (à faire seul)
+## Exercice (à faire seul) {#exercice-a-faire-seul}
 
 1. Reprends le dashboard Streamlit de la leçon précédente et réécris-le en Dash avec le même selectbox et le même graphique.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-33}
 
 - [Documentation Dash](https://dash.plotly.com/)
 
@@ -3415,7 +3415,7 @@ if __name__ == "__main__":
 
 <!-- source : 12-dashboards/03-outils-bi.md -->
 
-# Dashboards 3 — Power BI, Tableau et outils BI (aperçu)
+# Dashboards 3 — Power BI, Tableau et outils BI (aperçu) {#dashboards-3-power-bi-tableau-et-outils-bi-apercu}
 
 En entreprise, les dashboards sont souvent faits avec des outils dédiés, sans coder :
 
@@ -3426,24 +3426,24 @@ En entreprise, les dashboards sont souvent faits avec des outils dédiés, sans 
 | **Looker Studio** | Google | gratuit, connecté à Google Sheets/BigQuery |
 | **Metabase** | open source | dashboards SQL simples, auto-hébergeable |
 
-## Ce qu'il faut retenir
+## Ce qu'il faut retenir {#ce-qu-il-faut-retenir}
 
 - Ces outils se connectent aux mêmes sources (CSV, SQL, entrepôts de données) que Python.
 - Python sert souvent **en amont** : nettoyer et préparer les données (pandas) avant de les charger dans Power BI/Tableau.
 - Le métier de **BI Analyst** combine SQL + outil BI + un peu de modélisation ; c'est la [roadmap BI Analyst](https://roadmap.sh/ai-data-scientist) voisine.
 
-## Exercice (à faire seul)
+## Exercice (à faire seul) {#exercice-a-faire-seul-1}
 
 1. Télécharge la version gratuite de Power BI Desktop (Windows) ou essaie Metabase en local avec Docker, importe un de tes CSV nettoyés, et crée un dashboard avec 3 visualisations.
 
-Module suivant : [13 — Big data et pipelines](../13-big-data-pipelines/README.md).
+Module suivant : [13 — Big data et pipelines](#13-big-data-et-pipelines-de-donnees-apercu).
 
 
 ---
 
 <!-- source : 13-big-data-pipelines/README.md -->
 
-# 13 — Big data et pipelines de données (aperçu)
+# 13 — Big data et pipelines de données (aperçu) {#13-big-data-et-pipelines-de-donnees-apercu}
 
 Quand les données ne tiennent plus sur une machine ou doivent être traitées automatiquement à intervalles réguliers.
 
@@ -3453,26 +3453,26 @@ pip install dask            # pandas parallèle sur une machine
 # airflow : pip install apache-airflow
 ```
 
-## Leçons
+## Leçons {#lecons-9}
 
-1. [Dask : pandas en parallèle](01-dask.md) — même API que pandas, mais distribué sur les cœurs/plusieurs machines.
-2. [PySpark : le standard du big data](02-pyspark.md) — cluster, DataFrames Spark, lecture de Parquet distribué.
-3. [Airflow : orchestrer des pipelines](03-airflow.md) — planifier et surveiller des tâches (ex. « chaque nuit à 2h : récupérer → nettoyer → charger »).
+1. [Dask : pandas en parallèle](#big-data-1-dask-pandas-en-parallele) — même API que pandas, mais distribué sur les cœurs/plusieurs machines.
+2. [PySpark : le standard du big data](#big-data-2-pyspark-apercu) — cluster, DataFrames Spark, lecture de Parquet distribué.
+3. [Airflow : orchestrer des pipelines](#big-data-3-airflow-orchestrer-des-pipelines-apercu) — planifier et surveiller des tâches (ex. « chaque nuit à 2h : récupérer → nettoyer → charger »).
 
-## Idée générale
+## Idée générale {#idee-generale}
 
 - **Dask** = « pandas qui scale » sur une grosse machine.
 - **PySpark** = « pandas sur un cluster de machines » (standard industriel, ex. Databricks).
 - **Airflow** = le chef d'orchestre qui enchaîne les étapes et gère les échecs.
 
-Module suivant : [14 — Sujets avancés](../14-sujets-avances/README.md).
+Module suivant : [14 — Sujets avancés](#14-sujets-avances-apercus).
 
 
 ---
 
 <!-- source : 13-big-data-pipelines/01-dask.md -->
 
-# Big data 1 — Dask (pandas en parallèle)
+# Big data 1 — Dask (pandas en parallèle) {#big-data-1-dask-pandas-en-parallele}
 
 ```bash
 pip install "dask[dataframe]"
@@ -3495,7 +3495,7 @@ resultat = (
 resultat.compute()          # exécute le calcul et renvoie un pandas DataFrame
 ```
 
-## Quand l'utiliser
+## Quand l'utiliser {#quand-l-utiliser}
 
 - Fichier CSV/Parquet de quelques Go, trop lourd pour `pd.read_csv` en RAM.
 - Beaucoup de calculs répétitifs à paralléliser.
@@ -3506,11 +3506,11 @@ x = da.random.random((10000, 10000), chunks=(1000, 1000))   # comme numpy, par b
 y = (x + x.T).mean(axis=0).compute()
 ```
 
-## Exercice (à faire seul)
+## Exercice (à faire seul) {#exercice-a-faire-seul-2}
 
 1. Génère 5 CSV de 200 000 lignes chacun, lis-les avec `dd.read_csv("data/part-*.csv")`, fais un groupby + agrégation, `compute()`, et compare le temps avec pandas.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-34}
 
 - [Documentation Dask](https://docs.dask.org/)
 
@@ -3519,7 +3519,7 @@ y = (x + x.T).mean(axis=0).compute()
 
 <!-- source : 13-big-data-pipelines/02-pyspark.md -->
 
-# Big data 2 — PySpark (aperçu)
+# Big data 2 — PySpark (aperçu) {#big-data-2-pyspark-apercu}
 
 ```bash
 pip install pyspark    # nécessite Java installé sur la machine
@@ -3540,7 +3540,7 @@ df.write.parquet("data/resultat.parquet")
 spark.stop()
 ```
 
-## Spark vs pandas/Polars/Dask
+## Spark vs pandas/Polars/Dask {#spark-vs-pandas-polars-dask}
 
 | Outil | Échelle | Quand |
 |---|---|---|
@@ -3549,12 +3549,12 @@ spark.stop()
 | Dask | RAM × cœurs, 1 grosse machine | paralléliser pandas |
 | PySpark | To/Po, cluster de machines | vrai big data industriel |
 
-## Exercice (à faire seul)
+## Exercice (à faire seul) {#exercice-a-faire-seul-3}
 
 1. Installe pyspark (avec Java), crée une `SparkSession`, lis un Parquet que tu as généré, filtre + groupBy + `show()`.
 2. Compare le temps de lecture d'un gros CSV avec pandas, Polars et Spark.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-35}
 
 - [PySpark : getting started](https://spark.apache.org/docs/latest/api/python/getting_started/index.html)
 
@@ -3563,7 +3563,7 @@ spark.stop()
 
 <!-- source : 13-big-data-pipelines/03-airflow.md -->
 
-# Big data 3 — Airflow : orchestrer des pipelines (aperçu)
+# Big data 3 — Airflow : orchestrer des pipelines (aperçu) {#big-data-3-airflow-orchestrer-des-pipelines-apercu}
 
 ```bash
 pip install apache-airflow
@@ -3571,14 +3571,14 @@ pip install apache-airflow
 
 **Apache Airflow** planifie et surveille des suites de tâches (un **DAG** = Directed Acyclic Graph) : « chaque nuit, récupérer les données → les nettoyer → les charger dans l'entrepôt → envoyer un rapport ».
 
-## Concepts clés
+## Concepts clés {#concepts-cles}
 
 - **DAG** : le graphe des tâches et de leurs dépendances.
 - **Operator** : une tâche (PythonOperator pour exécuter une fonction, BashOperator...).
 - **Scheduler** : déclenche les DAGs selon un planning (`@daily`, cron...).
 - **Web UI** : visualise l'exécution, les logs, relance les tâches en échec.
 
-## Exemple de DAG (Python)
+## Exemple de DAG (Python) {#exemple-de-dag-python}
 
 ```python
 from airflow import DAG
@@ -3597,53 +3597,53 @@ with DAG("pipeline_ventes", start_date=datetime(2024, 1, 1), schedule="@daily") 
 
 Lancement local : `airflow standalone` puis UI sur `http://localhost:8080`.
 
-## Alternatives plus légères
+## Alternatives plus légères {#alternatives-plus-legeres}
 
 - **cron** (Linux) / **Planificateur de tâches** (Windows) pour un simple script régulier.
 - `schedule` (pip) en Python.
 - Prefect / Dagster pour des orchestrateurs modernes plus simples qu'Airflow.
 
-## Exercice (à faire seul)
+## Exercice (à faire seul) {#exercice-a-faire-seul-4}
 
 1. Écris un script `pipeline.py` (récupérer API → nettoyer → sauvegarder) et planifie-le avec cron (`crontab -e`, ex. `0 2 * * * /chemin/.venv/bin/python /chemin/pipeline.py`) sur Linux, ou avec le Planificateur de tâches sur Windows.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-36}
 
 - [Documentation Airflow](https://airflow.apache.org/docs/)
 
-Module suivant : [14 — Sujets avancés](../14-sujets-avances/README.md).
+Module suivant : [14 — Sujets avancés](#14-sujets-avances-apercus).
 
 
 ---
 
 <!-- source : 14-sujets-avances/README.md -->
 
-# 14 — Sujets avancés (aperçus)
+# 14 — Sujets avancés (aperçus) {#14-sujets-avances-apercus}
 
 Ces sujets complètent la roadmap « Python for Data Analysis » et mènent vers la data science / le ML (voir la [roadmap ML](https://roadmap.sh/machine-learning) et la [roadmap AI & Data Scientist](https://roadmap.sh/ai-data-scientist)).
 
-## Leçons
+## Leçons {#lecons-10}
 
-1. [POO pour l'analyse de données](01-poo.md) — classes, encapsulation : structurer un projet d'analyse réutilisable.
-2. [SciPy et scikit-learn](02-scipy-sklearn.md) — statistiques avancées et premier modèle de ML.
-3. [Analyse géospatiale](03-geo.md) — GeoPandas, cartes de données.
+1. [POO pour l'analyse de données](#avance-1-poo-pour-l-analyse-de-donnees) — classes, encapsulation : structurer un projet d'analyse réutilisable.
+2. [SciPy et scikit-learn](#avance-2-scipy-et-scikit-learn-apercu) — statistiques avancées et premier modèle de ML.
+3. [Analyse géospatiale](#avance-3-analyse-geospatiale-apercu) — GeoPandas, cartes de données.
 
 ```bash
 pip install scipy scikit-learn geopandas
 ```
 
-Tu as terminé le parcours principal : direction les [projets solo](../projets/README.md) !
+Tu as terminé le parcours principal : direction les [projets solo](#projets-solo-a-realiser-sans-ia) !
 
 
 ---
 
 <!-- source : 14-sujets-avances/01-poo.md -->
 
-# Avancé 1 — POO pour l'analyse de données
+# Avancé 1 — POO pour l'analyse de données {#avance-1-poo-pour-l-analyse-de-donnees}
 
 La **programmation orientée objet** structure un projet d'analyse en objets cohérents (ex. une classe `Rapport` qui charge, nettoie, analyse et exporte).
 
-## Classe de base
+## Classe de base {#classe-de-base}
 
 ```python
 class AnalyseVentes:
@@ -3669,7 +3669,7 @@ print(a.ca_par_categorie())
 a.exporter("data/ventes_propre.csv")
 ```
 
-## Concepts clés
+## Concepts clés {#concepts-cles-1}
 
 - `__init__` : constructeur (état initial de l'objet).
 - `self` : l'objet lui-même.
@@ -3678,7 +3678,7 @@ a.exporter("data/ventes_propre.csv")
 - `@property` : accède à un attribut comme à une propriété calculée.
 - `__repr__` : représentation lisible (`print(objet)`).
 
-## Quand faire de la POO en data analysis ?
+## Quand faire de la POO en data analysis ? {#quand-faire-de-la-poo-en-data-analysis}
 
 - Projet réutilisable (plusieurs rapports sur les mêmes données).
 - Plusieurs jeux de données avec la même logique de traitement.
@@ -3686,12 +3686,12 @@ a.exporter("data/ventes_propre.csv")
 
 Pour un script ponctuel, des fonctions suffisent (module 01).
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-35}
 
 1. Crée une classe `Dataset` avec méthodes `charger`, `nb_lignes`, `colonnes`, `stats` (retourne `describe()`), `sauvegarder`.
 2. Crée `DatasetCSV(Dataset)` et `DatasetAPI(Dataset)` qui héritent de `Dataset` et implémentent `charger` différemment.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-37}
 
 - [Tutoriel officiel — classes](https://docs.python.org/fr/3/tutorial/classes.html)
 
@@ -3700,13 +3700,13 @@ Pour un script ponctuel, des fonctions suffisent (module 01).
 
 <!-- source : 14-sujets-avances/02-scipy-sklearn.md -->
 
-# Avancé 2 — SciPy et scikit-learn (aperçu)
+# Avancé 2 — SciPy et scikit-learn (aperçu) {#avance-2-scipy-et-scikit-learn-apercu}
 
 ```bash
 pip install scipy scikit-learn
 ```
 
-## SciPy : calcul scientifique
+## SciPy : calcul scientifique {#scipy-calcul-scientifique}
 
 ```python
 import numpy as np
@@ -3726,7 +3726,7 @@ f = lambda x: (x - 3) ** 2
 optimize.minimize(f, x0=0)                 # trouve le minimum
 ```
 
-## scikit-learn : premier modèle de machine learning
+## scikit-learn : premier modèle de machine learning {#scikit-learn-premier-modele-de-machine-learning}
 
 Le pattern universel : `fit` (entraînement) puis `predict` (prédiction).
 
@@ -3754,13 +3754,13 @@ print("Coefficients :", modele.coef_, "Intercept :", modele.intercept_)
 
 Autres modèles courants : `RandomForestRegressor`, `LogisticRegression` (classification), `KMeans` (clustering)... avec toujours la même API `fit`/`predict`.
 
-## Exercices (à faire seul)
+## Exercices (à faire seul) {#exercices-a-faire-seul-36}
 
 1. Test t : deux groupes de notes (2 classes) — y a-t-il une différence significative de moyenne ? (`stats.ttest_ind`)
 2. Régression linéaire simple avec `stats.linregress` : prix d'un logement en fonction de la surface.
 3. Premier modèle sklearn : prédis le pourboire (`tip`) à partir du montant (`total_bill`) sur le dataset `tips` de seaborn ; affiche R².
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-38}
 
 - [SciPy](https://docs.scipy.org/doc/scipy/tutorial/index.html)
 - [scikit-learn : getting started](https://scikit-learn.org/stable/getting_started.html)
@@ -3771,7 +3771,7 @@ Autres modèles courants : `RandomForestRegressor`, `LogisticRegression` (classi
 
 <!-- source : 14-sujets-avances/03-geo.md -->
 
-# Avancé 3 — Analyse géospatiale (aperçu)
+# Avancé 3 — Analyse géospatiale (aperçu) {#avance-3-analyse-geospatiale-apercu}
 
 ```bash
 pip install geopandas
@@ -3794,13 +3794,13 @@ points = gpd.GeoDataFrame(..., geometry=gpd.points_from_xy(lons, lats), crs="EPS
 jointure = gpd.sjoin(points, regions, predicate="within")
 ```
 
-## Ressources de données géo gratuites
+## Ressources de données géo gratuites {#ressources-de-donnees-geo-gratuites}
 
 - [Natural Earth](https://www.naturalearthdata.com/) : frontières de pays, villes.
 - [data.gouv.fr](https://www.data.gouv.fr/) : données géo françaises (découpage administratif, etc.).
 - OpenStreetMap via [Overpass API](https://overpass-turbo.eu/).
 
-## Cartes interactives
+## Cartes interactives {#cartes-interactives}
 
 ```python
 import plotly.express as px
@@ -3809,48 +3809,48 @@ fig = px.scatter_mapbox(df, lat="lat", lon="lon", size="population", hover_name=
 fig.show()
 ```
 
-## Exercice (à faire seul)
+## Exercice (à faire seul) {#exercice-a-faire-seul-5}
 
 1. Récupère le GeoJSON des pays (Natural Earth), charge avec GeoPandas, colore par continent, sauvegarde la carte en HTML avec Plotly choropleth.
 
-## Pour aller plus loin
+## Pour aller plus loin {#pour-aller-plus-loin-39}
 
 - [GeoPandas](https://geopandas.org/)
 - [Roadmap GIS / géospatial](https://roadmap.sh/datastructures-and-algorithms) (section géo) — ou la roadmap Data Engineer.
 
-Parcours terminé : place aux [projets solo](../projets/README.md) !
+Parcours terminé : place aux [projets solo](#projets-solo-a-realiser-sans-ia) !
 
 
 ---
 
 <!-- source : projets/README.md -->
 
-# Projets solo — à réaliser sans IA
+# Projets solo — à réaliser sans IA {#projets-solo-a-realiser-sans-ia}
 
 Ces mini-projets sont conçus pour être faits **seul**, dans l'ordre, en t'appuyant uniquement sur les leçons du parcours et la documentation officielle. Ne demande pas la solution à une IA : le but est de chercher, tester, te tromper et trouver.
 
-## Règles du jeu
+## Règles du jeu {#regles-du-jeu}
 
 1. Lis l'énoncé, écris ton code, teste, corrige. La documentation officielle est ton amie ([docs.python.org](https://docs.python.org/fr/3/), [pandas.pydata.org](https://pandas.pydata.org/docs/), etc.).
 2. Versionne chaque projet avec git (un commit par étape qui marche).
 3. Quand tu bloques plus de 30 min sur un point, note la question précise — puis cherche dans la doc avant toute autre aide.
 
-## Progression proposée
+## Progression proposée {#progression-proposee}
 
 | # | Projet | Niveau | Compétences visées |
 |---|---|---|---|
-| 1 | [Dépenses personnelles](01-depenses-personnelles.md) | ⭐ débutant | bases Python, fichiers CSV, pandas, matplotlib |
-| 2 | [Notes de classe](02-notes-de-classe.md) | ⭐ débutant | fonctions, statistiques de base, numpy |
-| 3 | [Météo d'une ville](03-meteo-open-meteo.md) | ⭐⭐ | API `requests`, JSON, nettoyage de dates, graphiques |
-| 4 | [Scraping de livres](04-scraping-books.md) | ⭐⭐ | BeautifulSoup, parsing HTML, nettoyage de texte |
-| 5 | [EDA du Titanic](05-titanic-eda.md) | ⭐⭐ | pandas, groupby, EDA complète, seaborn |
-| 6 | [Pandas vs Polars](06-pandas-vs-polars.md) | ⭐⭐ | comparaison de perfs, benchmark |
-| 7 | [Mini-ETL SQL](07-etl-sql.md) | ⭐⭐ | CSV → sqlite3/DuckDB → requêtes SQL → rapport |
-| 8 | [Dashboard Streamlit](08-dashboard-streamlit.md) | ⭐⭐⭐ | app web interactive en pur Python |
-| 9 | [Dataset volontairement sale](09-dataset-sale.md) | ⭐⭐⭐ | nettoyage complet, notebook documenté |
-| 10 | [Rapport automatisé](10-rapport-automatise.md) | ⭐⭐⭐ | script + planification (cron), génération de PNG |
+| 1 | [Dépenses personnelles](#projet-1-analyse-de-tes-depenses-personnelles) | ⭐ débutant | bases Python, fichiers CSV, pandas, matplotlib |
+| 2 | [Notes de classe](#projet-2-statistiques-de-notes-de-classe) | ⭐ débutant | fonctions, statistiques de base, numpy |
+| 3 | [Météo d'une ville](#projet-3-meteo-d-une-ville-sur-14-jours) | ⭐⭐ | API `requests`, JSON, nettoyage de dates, graphiques |
+| 4 | [Scraping de livres](#projet-4-scraper-et-analyser-un-catalogue-de-livres) | ⭐⭐ | BeautifulSoup, parsing HTML, nettoyage de texte |
+| 5 | [EDA du Titanic](#projet-5-eda-complete-du-titanic) | ⭐⭐ | pandas, groupby, EDA complète, seaborn |
+| 6 | [Pandas vs Polars](#projet-6-benchmark-pandas-vs-polars) | ⭐⭐ | comparaison de perfs, benchmark |
+| 7 | [Mini-ETL SQL](#projet-7-mini-etl-csv-base-sql-rapport) | ⭐⭐ | CSV → sqlite3/DuckDB → requêtes SQL → rapport |
+| 8 | [Dashboard Streamlit](#projet-8-dashboard-interactif-avec-streamlit) | ⭐⭐⭐ | app web interactive en pur Python |
+| 9 | [Dataset volontairement sale](#projet-9-nettoyer-un-dataset-volontairement-sale) | ⭐⭐⭐ | nettoyage complet, notebook documenté |
+| 10 | [Rapport automatisé](#projet-10-rapport-automatise-script-planification) | ⭐⭐⭐ | script + planification (cron), génération de PNG |
 
-## Données utilisables sans clé API
+## Données utilisables sans clé API {#donnees-utilisables-sans-cle-api}
 
 - Tes propres données (dépenses, notes, livres lus...).
 - [Open-Meteo](https://open-meteo.com/en/docs) (météo, sans clé), [REST Countries](https://restcountries.com/), [JSONPlaceholder](https://jsonplaceholder.com/), [PokeAPI](https://pokeapi.co/).
@@ -3864,11 +3864,11 @@ Ces mini-projets sont conçus pour être faits **seul**, dans l'ordre, en t'appu
 
 <!-- source : projets/01-depenses-personnelles.md -->
 
-# Projet 1 — Analyse de tes dépenses personnelles
+# Projet 1 — Analyse de tes dépenses personnelles {#projet-1-analyse-de-tes-depenses-personnelles}
 
 **Niveau :** ⭐ débutant · **Modules :** 01, 02, 03, 05 (bases), 08 (matplotlib)
 
-## Énoncé
+## Énoncé {#enonce}
 
 Pendant un mois, note toutes tes dépenses dans un fichier CSV que tu crées toi-même :
 
@@ -3888,13 +3888,13 @@ Puis écris un programme Python qui :
 5. Produit un **graphique en barres** des dépenses par catégorie (matplotlib) et le sauvegarde en PNG.
 6. Bonus : affiche la catégorie qui représente la plus grande part du total (en %).
 
-## Critères de réussite
+## Critères de réussite {#criteres-de-reussite}
 
 - Le programme tourne sans erreur sur ton CSV réel.
 - Le PNG est généré et lisible (titre, axes nommés).
 - Le code est découpé en fonctions (une par étape).
 
-## Extensions possibles
+## Extensions possibles {#extensions-possibles}
 
 - Lire le CSV exporté par ta banque (souvent en `;` avec des virgules décimales) : gérer `sep=";"` et `decimal=","`.
 - Ajouter une colonne `mois` et comparer deux mois.
@@ -3905,11 +3905,11 @@ Puis écris un programme Python qui :
 
 <!-- source : projets/02-notes-de-classe.md -->
 
-# Projet 2 — Statistiques de notes de classe
+# Projet 2 — Statistiques de notes de classe {#projet-2-statistiques-de-notes-de-classe}
 
 **Niveau :** ⭐ débutant · **Modules :** 01 (fonctions), 04 (numpy)
 
-## Énoncé
+## Énoncé {#enonce-1}
 
 Tu es délégué·e de classe. Le professeur te donne les notes de ta classe en maths dans un fichier texte, une note par ligne :
 
@@ -3929,13 +3929,13 @@ Tu es délégué·e de classe. Le professeur te donne les notes de ta classe en 
 4. Affiche la **répartition par mention** (insuffisant < 10, passable 10-12, assez bien 12-14, bien 14-16, très bien >= 16) avec un histogramme matplotlib.
 5. Bonus : avec numpy, calcule l'écart-type et trace la distribution avec `np.histogram`.
 
-## Critères de réussite
+## Critères de réussite {#criteres-de-reussite-1}
 
 - Fonctions réutilisables (`lire_notes`, `statistiques`, `mentions`...).
 - Le programme gère un fichier vide ou inexistant sans planter (message clair).
 - Résultats affichés avec des textes explicites.
 
-## Extensions possibles
+## Extensions possibles {#extensions-possibles-1}
 
 - Plusieurs matières dans le CSV (`eleve,maths,francais,anglais`) : moyenne par élève et par matière.
 - Génère toi-même un fichier de 30 notes aléatoires avec `numpy.random.default_rng(42).integers(0, 21, 30)` pour tester.
@@ -3945,11 +3945,11 @@ Tu es délégué·e de classe. Le professeur te donne les notes de ta classe en 
 
 <!-- source : projets/03-meteo-open-meteo.md -->
 
-# Projet 3 — Météo d'une ville sur 14 jours
+# Projet 3 — Météo d'une ville sur 14 jours {#projet-3-meteo-d-une-ville-sur-14-jours}
 
 **Niveau :** ⭐⭐ · **Modules :** 09 (API), 05 (pandas), 06 (dates), 08 (viz)
 
-## Énoncé
+## Énoncé {#enonce-2}
 
 Utilise l'[API Open-Meteo](https://open-meteo.com/en/docs) (gratuite, **sans clé**) pour récupérer les prévisions météo de ta ville sur 14 jours.
 
@@ -3962,13 +3962,13 @@ Le programme doit :
 5. Tracer un graphique matplotlib avec deux courbes (tmax, tmin) + barres de précipitations, sauvegardé en PNG.
 6. Sauvegarder le DataFrame nettoyé en CSV.
 
-## Critères de réussite
+## Critères de réussite {#criteres-de-reussite-2}
 
 - Gestion propre des erreurs réseau (`try/except`, `timeout`).
 - Un seul appel API récupère tout (paramètre `daily`).
 - Le graphique a un titre, des légendes et des axes nommés.
 
-## Extensions possibles
+## Extensions possibles {#extensions-possibles-2}
 
 - Comparer la météo de 3 villes sur le même graphique.
 - Corrélation : les jours de forte précipitation sont-ils les jours les plus frais ? (`df[["tmax","precipitations"]].corr()`)
@@ -3979,11 +3979,11 @@ Le programme doit :
 
 <!-- source : projets/04-scraping-books.md -->
 
-# Projet 4 — Scraper et analyser un catalogue de livres
+# Projet 4 — Scraper et analyser un catalogue de livres {#projet-4-scraper-et-analyser-un-catalogue-de-livres}
 
 **Niveau :** ⭐⭐ · **Modules :** 09 (BeautifulSoup), 05, 06 (nettoyage texte)
 
-## Énoncé
+## Énoncé {#enonce-3}
 
 [books.toscrape.com](https://books.toscrape.com/) est un site **conçu pour s'entraîner au scraping**. Ta mission :
 
@@ -3994,13 +3994,13 @@ Le programme doit :
 5. Graphiques : histogramme des prix, barplot du prix moyen par note.
 6. Bonus : scraper les **3 premières pages** (pagination `catalogue/page-2.html`, ...) et sauvegarder le résultat complet en CSV.
 
-## Critères de réussite
+## Critères de réussite {#criteres-de-reussite-3}
 
 - `User-Agent` personnalisé dans les requêtes + `time.sleep(1)` entre les pages.
 - Les prix sont bien des `float` (vérifie avec `dtypes`).
 - Le CSV exporté se relit correctement.
 
-## Extensions possibles
+## Extensions possibles {#extensions-possibles-3}
 
 - Extraire aussi la catégorie de chaque livre (page détail) et calculer le prix moyen par catégorie.
 - Trouver les livres "Five stars" au prix inférieur à la moyenne.
@@ -4010,11 +4010,11 @@ Le programme doit :
 
 <!-- source : projets/05-titanic-eda.md -->
 
-# Projet 5 — EDA complète du Titanic
+# Projet 5 — EDA complète du Titanic {#projet-5-eda-complete-du-titanic}
 
 **Niveau :** ⭐⭐ · **Modules :** 05, 06, 07, 08
 
-## Énoncé
+## Énoncé {#enonce-4}
 
 Le dataset du Titanic (passagers, survie ou non) est le classique de l'EDA. Récupère le CSV `titanic.csv` (Kaggle « Titanic - Machine Learning from Disaster », téléchargement manuel) ou utilise `sns.load_dataset("titanic")`.
 
@@ -4027,13 +4027,13 @@ Réalise une **analyse exploratoire complète** dans un notebook Jupyter, avec a
 5. **3 questions métier** avec leurs réponses chiffrées, ex. : « Quelle classe a le meilleur taux de survie ? », « Les femmes ont-elles survécu plus que les hommes ? À quel point ? », « Le prix du billet (fare) est-il lié à la survie ? ».
 6. Un **résumé écrit** en markdown dans le notebook (3-5 conclusions).
 
-## Critères de réussite
+## Critères de réussite {#criteres-de-reussite-4}
 
 - Notebook exécutable de haut en bas sans erreur (`Kernel > Restart & Run All`).
 - Chaque graphique a un titre et une phrase d'interprétation en markdown.
 - Les questions métier ont des réponses **chiffrées**.
 
-## Extensions possibles
+## Extensions possibles {#extensions-possibles-4}
 
 - Tableau croisé classe × sexe avec `crosstab(normalize="index")`.
 - Compare survie des passagers seuls vs accompagnés (colonnes `sibsp` + `parch`).
@@ -4043,11 +4043,11 @@ Réalise une **analyse exploratoire complète** dans un notebook Jupyter, avec a
 
 <!-- source : projets/06-pandas-vs-polars.md -->
 
-# Projet 6 — Benchmark : pandas vs Polars
+# Projet 6 — Benchmark : pandas vs Polars {#projet-6-benchmark-pandas-vs-polars}
 
 **Niveau :** ⭐⭐ · **Modules :** 04, 05, 11
 
-## Énoncé
+## Énoncé {#enonce-5}
 
 Génère toi-même un gros fichier de ventes (pas besoin de téléchargement) :
 
@@ -4074,13 +4074,13 @@ Puis écris un script de benchmark qui mesure (avec `time.perf_counter()`) le te
 
 Affiche un tableau comparatif des temps. Réponds par écrit : quel outil gagne, et de combien ?
 
-## Critères de réussite
+## Critères de réussite {#criteres-de-reussite-5}
 
 - Même analyse des deux côtés (vérifie que les résultats sont identiques, ex. `pd.testing` ou `assert` sur les valeurs).
 - Temps mesurés proprement (2-3 essais, moyenne).
 - Fichier CSV généré avec une graine fixée (reproductible).
 
-## Extensions possibles
+## Extensions possibles {#extensions-possibles-5}
 
 - Tester aussi `pl.scan_csv` (lazy) vs `pl.read_csv`.
 - Tester DuckDB (`duckdb.sql(...)`) comme troisième candidat.
@@ -4091,11 +4091,11 @@ Affiche un tableau comparatif des temps. Réponds par écrit : quel outil gagne,
 
 <!-- source : projets/07-etl-sql.md -->
 
-# Projet 7 — Mini-ETL : CSV → base SQL → rapport
+# Projet 7 — Mini-ETL : CSV → base SQL → rapport {#projet-7-mini-etl-csv-base-sql-rapport}
 
 **Niveau :** ⭐⭐ · **Modules :** 05, 06, 10
 
-## Énoncé
+## Énoncé {#enonce-6}
 
 Construis un petit pipeline **ETL** (Extract → Transform → Load) :
 
@@ -4109,13 +4109,13 @@ Construis un petit pipeline **ETL** (Extract → Transform → Load) :
 5. **Bonus** : refais les mêmes requêtes directement sur le CSV avec **DuckDB** (`duckdb.sql("SELECT ... FROM 'data/ventes.csv' ...")`) et compare.
 6. Exporte le rapport (résultats des requêtes) en CSV.
 
-## Critères de réussite
+## Critères de réussite {#criteres-de-reussite-6}
 
 - Les tables sqlite contiennent bien les données nettoyées (vérifie avec `SELECT COUNT(*)`).
 - Au moins 3 requêtes SQL avec JOIN/GROUP BY.
 - Rapport CSV généré automatiquement.
 
-## Extensions possibles
+## Extensions possibles {#extensions-possibles-6}
 
 - Ajoute une table `produits` et des contraintes de clé étrangère (`PRAGMA foreign_keys = ON`).
 - Fais le même pipeline avec SQLAlchemy (`create_engine`).
@@ -4125,11 +4125,11 @@ Construis un petit pipeline **ETL** (Extract → Transform → Load) :
 
 <!-- source : projets/08-dashboard-streamlit.md -->
 
-# Projet 8 — Dashboard interactif avec Streamlit
+# Projet 8 — Dashboard interactif avec Streamlit {#projet-8-dashboard-interactif-avec-streamlit}
 
 **Niveau :** ⭐⭐⭐ · **Modules :** 08 (plotly), 12 (streamlit)
 
-## Énoncé
+## Énoncé {#enonce-7}
 
 Transforme une de tes analyses précédentes (météo, livres scrapés, Titanic...) en **application web interactive** :
 
@@ -4140,13 +4140,13 @@ Transforme une de tes analyses précédentes (météo, livres scrapés, Titanic.
 5. Un tableau des données filtrées (`st.dataframe`).
 6. Bonus : `st.file_uploader` pour charger n'importe quel CSV et voir ses stats instantanément.
 
-## Critères de réussite
+## Critères de réussite {#criteres-de-reussite-7}
 
 - L'app se lance sans erreur et se met à jour quand on change un filtre.
 - `@st.cache_data` sur le chargement des données.
 - Capture d'écran du dashboard jointe à ton commit (PNG dans le dossier du projet).
 
-## Extensions possibles
+## Extensions possibles {#extensions-possibles-7}
 
 - Carte (`st.map`) si tes données ont lat/lon.
 - Déploiement sur Streamlit Community Cloud (gratuit, lié à ton dépôt GitHub).
@@ -4156,11 +4156,11 @@ Transforme une de tes analyses précédentes (météo, livres scrapés, Titanic.
 
 <!-- source : projets/09-dataset-sale.md -->
 
-# Projet 9 — Nettoyer un dataset volontairement sale
+# Projet 9 — Nettoyer un dataset volontairement sale {#projet-9-nettoyer-un-dataset-volontairement-sale}
 
 **Niveau :** ⭐⭐⭐ · **Modules :** 06 (tout le nettoyage), 07
 
-## Énoncé
+## Énoncé {#enonce-8}
 
 Génère toi-même un dataset de 500 lignes « réaliste et sale » (clients d'une boutique en ligne) avec au moins :
 
@@ -4173,13 +4173,13 @@ Génère toi-même un dataset de 500 lignes « réaliste et sale » (clients d'u
 
 Puis, dans un **notebook Jupyter documenté**, applique le nettoyage étape par étape (une cellule + explication markdown par étape) et termine par un mini-rapport EDA (3 stats + 2 graphiques).
 
-## Critères de réussite
+## Critères de réussite {#criteres-de-reussite-8}
 
 - Chaque étape de nettoyage est justifiée dans le notebook (pourquoi cette imputation, pourquoi cette règle d'outlier...).
 - Un DataFrame « avant/après » comparatif (shape, % de manquants, dtypes).
 - Le notebook se rejoue entièrement sans erreur.
 
-## Extensions possibles
+## Extensions possibles {#extensions-possibles-8}
 
 - Écris les règles de nettoyage dans une fonction `nettoyer(df)` réutilisable, testée sur un deuxième fichier sale.
 - Encadre le tout dans une classe `NettoyeurDonnees` (module 14, POO).
@@ -4189,11 +4189,11 @@ Puis, dans un **notebook Jupyter documenté**, applique le nettoyage étape par 
 
 <!-- source : projets/10-rapport-automatise.md -->
 
-# Projet 10 — Rapport automatisé (script + planification)
+# Projet 10 — Rapport automatisé (script + planification) {#projet-10-rapport-automatise-script-planification}
 
 **Niveau :** ⭐⭐⭐ · **Modules :** 05-08, 13 (aperçu Airflow/cron)
 
-## Énoncé
+## Énoncé {#enonce-9}
 
 Automatise la production d'un **rapport hebdomadaire** :
 
@@ -4207,13 +4207,13 @@ Automatise la production d'un **rapport hebdomadaire** :
    - **Windows** : Planificateur de tâches → nouvelle tâche, déclencheur hebdomadaire, action : lancer le script avec le python du venv.
 3. Teste en lançant le script manuellement plusieurs fois : chaque exécution crée un dossier daté sans écraser les précédents.
 
-## Critères de réussite
+## Critères de réussite {#criteres-de-reussite-9}
 
 - Le script fonctionne depuis n'importe quel dossier (chemins relatifs au script via `pathlib.Path(__file__).parent`).
 - Les rapports s'accumulent dans `rapports/` avec la date du jour.
 - La planification est en place (montre la commande `crontab -l` ou la tâche planifiée).
 
-## Extensions possibles
+## Extensions possibles {#extensions-possibles-9}
 
 - Envoyer le rapport par email (`smtplib`) — ou simplement l'ouvrir dans un dashboard Streamlit qui liste les rapports archivés.
 - Version « pro » : remplacer cron par un DAG Airflow minimal (module 13).
